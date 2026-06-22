@@ -267,11 +267,13 @@ section.gallerySection {
 }
 .logo {
   cursor: pointer;
+  filter: grayscale();
   transform: translateY(-20%);
   -webkit-transform: translateY(-20%);
   -moz-transform: translateY(-20%);
   -ms-transform: translateY(-20%);
   -o-transform: translateY(-20%);
+  -webkit-filter: grayscale();
 }
 
 #originsLogo {
