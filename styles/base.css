@@ -22,11 +22,15 @@ body {
 
 main.homepage {
   scale: 1.4;
-  transform: translate(-3%,10%);
-  -webkit-transform: translate(-3%,10%);
-  -moz-transform: translate(-3%,10%);
-  -ms-transform: translate(-3%,10%);
-  -o-transform: translate(-3%,10%);
+}
+main {
+  position: absolute;
+  justify-self: center;
+  margin-top: 10px;
+}
+
+aside {
+  z-index: 1000;
 }
 
 body {
