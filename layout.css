@@ -1,0 +1,63 @@
+main {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+
+  transform: translateX(-5%);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.content.homepage {
+  padding-top: 100px;
+}
+
+.right {
+  float: right;
+  transform: translate(5%, -50%);
+  -webkit-transform: translate(5%, -50%);
+  -moz-transform: translate(5%, -50%);
+  -ms-transform: translate(5%, -50%);
+  -o-transform: translate(5%, -50%);
+}
+
+aside {
+  float: left;
+  margin-left: 10px;
+
+  transform: translateY(25%);
+}
+
+.originCard {
+  margin-left: 30px;
+  transform: translate(-5%, 65%);
+}
+
+.mainPlayersSection {
+  min-height: 100vh;
+
+  transform: translate(25%, 0%);
+}
+
+.playerName {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mainPlayersSection {
+  transform: translate(12%, 0%);
+  -webkit-transform: translate(12%, 0%);
+  -moz-transform: translate(12%, 0%);
+  -ms-transform: translate(12%, 0%);
+  -o-transform: translate(12%, 0%);
+}

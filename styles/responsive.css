@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
