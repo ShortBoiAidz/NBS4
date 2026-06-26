@@ -100,6 +100,13 @@
   -o-border-radius: 25px;
 }
 
+.playerCard {
+  width: clamp(10em, 20em, 50em);
+  justify-content: center;
+  align-items: center;
+  height: stretch;
+}
+
 .navMenu,
 .navCard {
   z-index: 1000;
@@ -302,15 +309,10 @@ section.gallerySection {
 }
 
 .playerHead {
+  display: flex;
   border-radius: 50%;
   overflow: hidden;
   width: clamp(80px, 10vw, 150px);
-  display: flex;
-  transform: translateX(45%);
-  -webkit-transform: translateX(45%);
-  -moz-transform: translateX(45%);
-  -ms-transform: translateX(45%);
-  -o-transform: translateX(45%);
 }
 
 .societyLogo {
