@@ -26,7 +26,9 @@ main.homepage {
 main {
   position: absolute;
   justify-self: center;
-  margin-top: 10px;
+  padding-left: clamp(10em, 3vw, 250px);
+  padding-right: clamp(3vw, 1vw, 150px);
+  margin-top: 15px;
 }
 
 aside {

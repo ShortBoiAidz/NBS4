@@ -53,6 +53,15 @@
   -o-transform: translateY(30%);
 }
 
+.mainCard,
+.mainCardH2Parent {
+  width: max-content;
+}
+.mainCardH2Parent,
+.mainCard {
+  margin-left: 20px;
+}
+
 .mainCardParent.originsCard {
   margin-left: 50px;
 }
@@ -89,6 +98,11 @@
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+}
+
+.navMenu,
+.navCard {
+  z-index: 1000;
 }
 
 .buttonCardParent {
@@ -226,6 +240,7 @@
 .mainCardH2 {
   display: flex;
   flex-direction: row;
+  gap: 10px;
 }
 .mainCardH2Parent {
   position-anchor: --mainCardParent;
