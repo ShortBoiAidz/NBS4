@@ -21,7 +21,7 @@ body {
 }
 
 main.homepage {
-  scale: 1.4;
+  scale: clamp(1, 1.2, 1.4);
 }
 main {
   position: absolute;
