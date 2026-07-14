@@ -24,7 +24,6 @@ main.homepage {
   scale: clamp(1, 1.2, 1.4);
 }
 main {
-  position: absolute;
   justify-self: center;
   padding-left: clamp(10em, 3vw, 250px);
   padding-right: clamp(3vw, 1vw, 150px);
@@ -87,6 +86,8 @@ sub {
 h1 {
   font-size: clamp(40px, 6vw, 70px);
   margin-top: 45px;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 h2 {

@@ -88,8 +88,6 @@
 }
 .navCard,
 .mainCardH2Parent,
-.originCard,
-.greyBackdrop,
 .mainCard,
 .playerCard,
 .galCard {
@@ -100,8 +98,19 @@
   -o-border-radius: 25px;
 }
 
+.playerCardParent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: clamp(9rem, 2vw, 500px);
+  width: stretch;
+  gap: 20px;
+}
+
 .playerCard {
-  width: clamp(10em, 20em, 50em);
+  width: clamp(15em, 20em, 30em);
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--darkGradPrim);
   justify-content: center;
   align-items: center;
   height: stretch;
@@ -117,8 +126,8 @@
   margin-top: 10px;
   flex-direction: row;
 }
-.buttonCard,
-.societyInfoCard {
+.buttonCard {
+  flex-direction: row;
   background: linear-gradient(
     135deg,
     var(--lightGradPrim),
@@ -139,10 +148,6 @@
   margin-right: 30px;
   margin-top: 0;
   display: flex;
-}
-
-.buttonCard {
-  flex-direction: row;
 }
 
 .societyInfoCard {
@@ -166,9 +171,7 @@
 }
 
 .navCard,
-.originCard,
 .mainCard,
-.greyBackdropParent,
 .mainCardParent,
 .playerCard,
 .galCard,
@@ -187,27 +190,13 @@
 
 .mainCard,
 .navCard,
-.originCard,
 .galCard {
   align-items: center;
 }
-.mainCard,
-.societyCard {
+.mainCard {
   padding: clamp(10px, 4vw, 20px);
   padding-top: 0;
   background: linear-gradient(135deg, var(--darkGradPrim), var(--darkGradSec));
-}
-
-.societyCard {
-  display: flex;
-  padding-left: clamp(350px, 5vw, 450px);
-  flex-direction: column;
-  border-radius: 45px;
-  -webkit-border-radius: 45px;
-  -moz-border-radius: 45px;
-  -ms-border-radius: 45px;
-  -o-border-radius: 45px;
-  margin: clamp(20px, 2vw, 30px);
 }
 
 .navDivider {
@@ -215,20 +204,6 @@
   width: 100%;
   height: 10px;
   margin-top: 3px;
-}
-
-.playerCardParent {
-  display: flex;
-  margin-right: 10px;
-  margin-bottom: 50px;
-  flex-direction: row;
-  align-items: center;
-  transform: translate(0%, 50%);
-  -webkit-transform: translate(0%, 50%);
-  -moz-transform: translate(0%, 50%);
-  -ms-transform: translate(0%, 50%);
-  -o-transform: translate(0%, 50%);
-  gap: 50px;
 }
 
 .galCardParent {
