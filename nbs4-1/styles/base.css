@@ -1,0 +1,135 @@
+/* Colors */
+:root {
+  --textColour: #5b575d;
+  --darkGradPrim: #1e1e1e;
+  --darkGradSec: #5b5a5a;
+  --lightGradPrim: #7d7d7d;
+  --lightGradSec: #b9b9b9;
+  --leagueSpartan:
+    "League Spartan",
+    "Comic Sans MS",
+    sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-image: url("/images/recolourfulCathedral.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+
+  font-family: var(--leagueSpartan);
+}
+
+/* Base Components */
+button {
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
+
+  margin: 10px;
+  padding: clamp(5px, 2vw, 20px);
+
+  cursor: pointer;
+
+  border-style: outset;
+  border-color: var(--darkGradPrim);
+
+  background: linear-gradient(
+    90deg,
+    var(--lightGradPrim),
+    var(--lightGradSec)
+  );
+}
+
+/* Typography */
+h1 {
+  font-size: clamp(30px, 3vw, 80px);
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+h2 {
+  font-size: clamp(23px, 2vw, 30px);
+}
+
+h3,
+sub {
+  font-size: clamp(20px, 2vw, 30px);
+}
+
+h3 {
+  margin: 2px;
+  color: var(--darkGradPrim);
+}
+
+h4 {
+  font-size: clamp(17px, 2vw, 23px);
+  line-height: clamp(40px, 2vw, 70px);
+}
+
+h5 {
+  font-size: clamp(12px, 5vw, 20px);
+  line-height: clamp(30px, 4vw, 40px);
+}
+
+h4,
+h5 {
+  margin: auto;
+}
+
+i {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: clamp(30px, 2vw, 45px);
+}
+
+p,
+h2,
+i {
+  color: var(--textColour);
+  font-family: var(--leagueSpartan);
+}
+
+p {
+  font-size: clamp(12.5px, 2vw, 15px);
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  list-style: none;
+}
+
+a {
+  color: var(--textColour);
+  text-decoration: none;
+}
+
+nav {
+  position: absolute;
+}
