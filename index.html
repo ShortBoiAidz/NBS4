@@ -62,13 +62,14 @@
 
     <nav>
       <ul class="sidebar">
-        <li><a href="index.html" class="gradient-text navLink active"><h4>Home</h4></a></li>
-        <li><a href="players.html" class="gradient-text navLink"><h4>Players</h4></a></li>
-        <li><a href="societies.html" class="gradient-text navLink"><h4>Societies</h4></a></li>
-        <li><a href="gallery.html" class="gradient-text navLink"><h4>Gallery</h4></a></li>
-        <li><a href="roadmap.html" class="gradient-text navLink"><h4>Roadmap</h4></a></li>
-        <li><a href="https://discord.gg/WKGu4864M5" class="gradient-text navLink"><h4>Join Here</h4></a></li>
-        <li><a href="NoodleBox 2.0.0.mrpack" class="gradient-text navLink" download><h4>Modrinth File</h4></a></li>
+        <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
+        <li><a href="index.html" class="navLink"><h4 class="active">Home</h4></a></li>
+        <li><a href="players.html" class="navLink"><h4>Players</h4></a></li>
+        <li><a onclick=notAvailable() class="navLink"><h4>Societies</h4></a></li>
+        <li><a href="gallery.html" class="navLink"><h4>Gallery</h4></a></li>
+        <li><a onclick=notAvailable() class="navLink"><h4>Roadmap</h4></a></li>
+        <li><a href="https://discord.gg/WKGu4864M5" class="navLink"><h4>Join Here</h4></a></li>
+        <li><a onclick=notAvailable() class="navLink" download><h4>Modrinth File</h4></a></li>
       </ul>
 
       <ul class="mainNav">
@@ -76,24 +77,24 @@
         <div class="navDivider"></div>
         <li><a href="index.html" class="gradient-text navLink active"><h4>Home</h4></a></li>
         <li><a href="players.html" class="gradient-text navLink"><h4>Players</h4></a></li>
-        <li><a href="societies.html" class="gradient-text navLink"><h4>Societies</h4></a></li>
-        <li><a href="gallery.html" class="gradient-text navLink"><h4>Gallery</h4></a></li>
-        <li><a href="roadmap.html" class="gradient-text navLink"><h4>Roadmap</h4></a></li>
+        <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Societies</h4></a></li>
+        <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Gallery</h4></a></li>
+        <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Roadmap</h4></a></li>
         <li><a href="https://discord.gg/WKGu4864M5" class="gradient-text navLink"><h4>Join Here</h4></a></li>
-        <li><a href="NoodleBox 2.0.0.mrpack" class="gradient-text navLink" download><h4>Modrinth File</h4></a></li>
+        <li><a onclick=notAvailable() class="gradient-text navLink" download><h4>Modrinth File</h4></a></li>
       </ul>
     </nav>
+    <i class="fa-solid fa-bars" onclick=openSidebar()></i>
 
     <main>
-      <img
-        src="images/noodleboxLogo.png"
-        alt="NoodleBox Logo"
-        class="logo"
-        onclick="location.href='https://nsb3-archive.surzies.workers.dev/'"
-        title="Take me back to the old times"
-      />
-
       <div class="content">
+        <img
+          src="images/noodleboxLogo.png"
+          alt="NoodleBox Logo"
+          class="logo"
+          onclick="location.href='https://nsb3-archive.surzies.workers.dev/'"
+          title="Take me back to the old times"
+        />
         <div class="mainCardParent">
           <div class="homeCard">
             <h1 class="gradient-text">NoodleBox Season 4</h1>
@@ -139,7 +140,7 @@
               <p>Meet the players who populate NoodleBox</p>
             </button>
 
-            <button onclick="location.href = 'societies.html'">
+            <button onclick=notAvailable()>
               <h2>Societies</h2>
               <p>NoodleBox is made up of societies. Find out more here</p>
             </button>
@@ -150,7 +151,7 @@
               <h2>Gallery</h2>
             </button>
 
-            <button onclick="location.href = 'roadmap.html'">
+            <button onclick=notAvailable()>
               <h2>Roadmap</h2>
             </button>
           </div>

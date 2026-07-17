@@ -15,18 +15,16 @@
   font-weight: bold;
 }
 
-.logo {
-  position: absolute;
-}
-
 /* Cards */
 .mainCardParent {
+  margin-top: clamp(-20rem, -2rem, -30px);
+  width: stretch;
   font-size: 0;
   anchor-name: --mainCardParent;
   margin-bottom: 25px;
 }
 
-.homeCard,
+
 .h2CardParent {
   width: clamp(100px, 40vw, 1000px);
 }
@@ -49,9 +47,11 @@
 .playerCardParent {
   display: flex;
   flex-wrap: wrap;
-  margin-left: clamp(9rem, 2vw, 500px);
+  justify-content: center;
+  align-items: center;
   width: stretch;
   gap: 20px;
+  transform: translate(50%, 0%);
 }
 
 .playerCard {
@@ -68,6 +68,10 @@
   display: flex;
   margin-top: 10em;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
 }
 
 .buttonCard {
@@ -113,6 +117,7 @@
 .playerCard {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .homeCard {
@@ -135,23 +140,11 @@
   gap: 10px;
 }
 .h2CardParent {
-  position-anchor: --mainCardParent;
   margin-top: clamp(20px, 2vw, 50px);
-  width: anchor-size(width);
-}
-
-.galCard {
+  width: stretch;
   display: flex;
-  padding-left: clamp(20px, 4vw, 40px);
-  padding-right: clamp(20px, 4vw, 40px);
-}
-
-section.gallerySection {
-  transform: translate(5%, -20%);
-  -webkit-transform: translate(5%, -20%);
-  -moz-transform: translate(5%, -20%);
-  -ms-transform: translate(5%, -20%);
-  -o-transform: translate(5%, -20%);
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /* Images */
@@ -162,30 +155,11 @@ section.gallerySection {
   -ms-transform: translate(140%, -30%);
   -o-transform: translate(140%, -30%);
 }
-.logo,
-.logoPlayers {
-  max-width: clamp(150px, 2vw, 200px);
-  z-index: 10000;
-}
 .logo {
+  max-width: 25%;
+  height: auto;
+  z-index: 999;
   cursor: pointer;
-  filter: grayscale();
-  transform: translateY(-20%);
-  -webkit-transform: translateY(-20%);
-  -moz-transform: translateY(-20%);
-  -ms-transform: translateY(-20%);
-  -o-transform: translateY(-20%);
-  -webkit-filter: grayscale();
-}
-
-#originsLogo {
-  max-width: clamp(100px, 2vw, 150px);
-  z-index: 10000;
-  transform: translate(70%, 45%);
-  -webkit-transform: translate(70%, 45%);
-  -moz-transform: translate(70%, 45%);
-  -ms-transform: translate(70%, 45%);
-  -o-transform: translate(70%, 45%);
 }
 
 .playerHead {
@@ -195,41 +169,21 @@ section.gallerySection {
   width: clamp(80px, 10vw, 150px);
 }
 
-.societyLogo {
-  display: flex;
-  width: clamp(30%, 5vw, 40%);
-  z-index: 10000;
+.fa-bars {
+  display: none;
+  top: 0;
+  right: 0;
+  margin: 10px;
   position: absolute;
-  transform: translate(-100%, 20%);
-  -webkit-transform: translate(-100%, 20%);
-  -moz-transform: translate(-100%, 20%);
-  -ms-transform: translate(-100%, 20%);
-  -o-transform: translate(-100%, 20%);
-  cursor: pointer;
+  color: var(--darkGradPrim);
+  font-size: clamp(50px, 2vw, 50px);
+  z-index: 10000
 }
 
-.galImg {
-  border-radius: 45px;
-  width: clamp(700px, 4vw, 2500px);
-  margin: 0px;
-
-  object-fit: cover;
-  object-position: center;
+.sidebarIcon {
+  color: var(--darkGradPrim);
 }
 
-img.roadmap {
-  scale: 1.2;
-  margin: 0;
-  padding: 0;
-  border-radius: 45px;
-  clip-path: inset(0px 0px 0px 3px);
-  transform: translate(0%, -5%);
-  -webkit-transform: translate(0%, -5%);
-  -moz-transform: translate(0%, -5%);
-  -ms-transform: translate(0%, -5%);
-  -o-transform: translate(0%, -5%);
-  -webkit-border-radius: 45px;
-  -moz-border-radius: 45px;
-  -ms-border-radius: 45px;
-  -o-border-radius: 45px;
+.fa-rectangle-xmark {
+  color: var(--darkGradPrim)
 }

@@ -4,21 +4,36 @@
     padding: 0 10px;
   }
 
-  h1 {
-    font-size: 42px;
-  }
-
   h3 {
     font-size: 22px;
   }
 }
 
 @media (max-width: 800px) {
-  .hideOnMobile {
+  .mainNav {
     display: none;
   }
 
   .fa-bars {
     display: block;
+  }
+
+  .h2Card,
+  .mainCardH2 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100vw;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .navLink {
+    color: black;
+  }
+  h4 {
+    font-size: clamp(20px, 2vw, 40px)
   }
 }

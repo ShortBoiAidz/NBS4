@@ -35,11 +35,24 @@ function emailClick() {
   onclick = alert("Email us:\nofficial@noodlebox.cc\nsupport@noodlebox.cc");
 }
 
-function toggleDiv() {
-  const x = document.getElementById("hiddenDiv");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+function notAvailable() {
+  alert("Coming soon!");
 }
+
+function openSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  const menuButton = document.querySelector(".fa-bars");
+
+  sidebar.style.display = "flex";
+  menuButton.style.display = "none";
+}
+
+function closeSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  const menuButton = document.querySelector(".fa-bars");
+
+  sidebar.style.display = "none";
+  menuButton.style.display = "block";
+}
+
+console.log("helloWorld(\"print\")")

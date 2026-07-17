@@ -16,15 +16,6 @@ main {
   justify-items: center;
 }
 
-.right {
-  float: right;
-  transform: translate(5%, -50%);
-  -webkit-transform: translate(5%, -50%);
-  -moz-transform: translate(5%, -50%);
-  -ms-transform: translate(5%, -50%);
-  -o-transform: translate(5%, -50%);
-}
-
 .playerName {
   text-align: center;
   margin-bottom: 10px;
@@ -43,11 +34,19 @@ main {
   height: 100vh;
   width: 250px;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-around;
+  text-align: center;
 }
 .sidebar li,
 .sidebar a {
   width: 100%;
+}
+.sidebar h4 {
+  color: var(--darkGradPrim);
+  font-size: clamp(30px, 2vw, 50px);
+}
+.sidebar h4:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .mainNav {
@@ -58,11 +57,16 @@ main {
   display: flex;
   flex-direction: column;
   width: fit-content;
-  left: 0;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: clamp(20vw, 45vw, 45vw);
+  justify-content: center;
+}
+
+.mainCardH2 {
+  display: flex;
 }
