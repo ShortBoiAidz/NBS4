@@ -3,8 +3,6 @@ main {
 
   display: flex;
   justify-content: center;
-
-  transform: translateX(-5%);
 }
 
 .container {
@@ -18,10 +16,6 @@ main {
   justify-items: center;
 }
 
-.content.homepage {
-  padding-top: 100px;
-}
-
 .right {
   float: right;
   transform: translate(5%, -50%);
@@ -31,19 +25,44 @@ main {
   -o-transform: translate(5%, -50%);
 }
 
-aside {
-  float: left;
-  margin-left: 10px;
-
-  transform: translateY(25%);
-}
-
-.originCard {
-  margin-left: 30px;
-  transform: translate(-5%, 65%);
-}
-
 .playerName {
   text-align: center;
   margin-bottom: 10px;
+}
+
+.sidebar {
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: none;
+  z-index: 10000;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li,
+.sidebar a {
+  width: 100%;
+}
+
+.mainNav {
+  padding: clamp(10px, 2vw, 20px);
+  background: linear-gradient(135deg, var(--darkGradPrim), var(--darkGradSec));
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  left: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

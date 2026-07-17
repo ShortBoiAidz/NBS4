@@ -12,3 +12,13 @@
     font-size: 22px;
   }
 }
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+}

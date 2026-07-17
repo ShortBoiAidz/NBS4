@@ -50,46 +50,52 @@
   </head>
 
   <body>
-    <div class="content homepage">
-      <!-- Loading Screen -->
-      <div class="loading-screen">
-        <div class="loading">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+    </div>
 
-      <aside>
+    <nav>
+      <ul class="sidebar">
+        <li><a href="index.html" class="gradient-text navLink active"><h4>Home</h4></a></li>
+        <li><a href="players.html" class="gradient-text navLink"><h4>Players</h4></a></li>
+        <li><a href="societies.html" class="gradient-text navLink"><h4>Societies</h4></a></li>
+        <li><a href="gallery.html" class="gradient-text navLink"><h4>Gallery</h4></a></li>
+        <li><a href="roadmap.html" class="gradient-text navLink"><h4>Roadmap</h4></a></li>
+        <li><a href="https://discord.gg/WKGu4864M5" class="gradient-text navLink"><h4>Join Here</h4></a></li>
+        <li><a href="NoodleBox 2.0.0.mrpack" class="gradient-text navLink" download><h4>Modrinth File</h4></a></li>
+      </ul>
+
+      <ul class="mainNav">
+        <h3 class="navHeader gradient-text">Navigation</h3>
+        <div class="navDivider"></div>
+        <li><a href="index.html" class="gradient-text navLink active"><h4>Home</h4></a></li>
+        <li><a href="players.html" class="gradient-text navLink"><h4>Players</h4></a></li>
+        <li><a href="societies.html" class="gradient-text navLink"><h4>Societies</h4></a></li>
+        <li><a href="gallery.html" class="gradient-text navLink"><h4>Gallery</h4></a></li>
+        <li><a href="roadmap.html" class="gradient-text navLink"><h4>Roadmap</h4></a></li>
+        <li><a href="https://discord.gg/WKGu4864M5" class="gradient-text navLink"><h4>Join Here</h4></a></li>
+        <li><a href="NoodleBox 2.0.0.mrpack" class="gradient-text navLink" download><h4>Modrinth File</h4></a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <img
+        src="images/noodleboxLogo.png"
+        alt="NoodleBox Logo"
+        class="logo"
+        onclick="location.href='https://nsb3-archive.surzies.workers.dev/'"
+        title="Take me back to the old times"
+      />
+
+      <div class="content">
         <div class="mainCardParent">
-          <div class="navCard">
-            <nav class="navMenu">
-              <h3 class="navHeader gradient-text">Navigation</h3>
-              <div class="navDivider"></div>
-
-              <a href="index.html" class="gradient-text navLink active"><h4>Home</h4></a>
-              <a href="players.html" class="gradient-text navLink"><h4>Players</h4></a>
-              <a href="societies.html" class="gradient-text navLink"><h4>Societies</h4></a>
-              <a href="gallery.html" class="gradient-text navLink"><h4>Gallery</h4></a>
-              <a href="roadmap.html" class="gradient-text navLink"><h4>Roadmap</h4></a>
-              <a href="https://discord.gg/WKGu4864M5" class="gradient-text navLink"><h4>Join Here</h4></a>
-              <a href="NoodleBox 2.0.0.mrpack" class="gradient-text navLink" download><h4>Modrinth File</h4></a>
-            </nav>
-          </div>
-        </div>
-      </aside>
-
-      <main class="homepage">
-        <img
-          src="images/noodleboxLogo.png"
-          alt="NoodleBox Logo"
-          class="logo"
-          onclick="location.href='https://nsb3-archive.surzies.workers.dev/'"
-          title="Take me back to the old times"
-        />
-        <div class="mainCardParent homepage">
-          <div class="mainCard">
+          <div class="homeCard">
             <h1 class="gradient-text">NoodleBox Season 4</h1>
 
             <br />
@@ -126,8 +132,8 @@
 
         <br />
 
-        <div class="mainCardH2Parent">
-          <div class="mainCardH2">
+        <div class="h2CardParent">
+          <div class="h2Card">
             <button onclick="location.href = 'players.html'">
               <h2>Players</h2>
               <p>Meet the players who populate NoodleBox</p>
