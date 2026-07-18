@@ -51,7 +51,7 @@
   align-items: center;
   width: stretch;
   gap: 20px;
-  transform: translate(50%, 0%);
+  margin-top: 50px;
 }
 
 .playerCard {
@@ -157,7 +157,7 @@
   -o-transform: translate(140%, -30%);
 }
 .logo {
-  max-width: 25%;
+  width: 25%;
   height: auto;
   z-index: 999;
   cursor: pointer;

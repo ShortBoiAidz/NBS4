@@ -22,6 +22,24 @@
   .mainCardH2 {
     flex-wrap: wrap;
   }
+
+  .playerCardParent {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 50%;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -29,6 +47,9 @@
     width: 100vw;
     text-align: center;
     justify-content: space-evenly;
+  }
+  .sidebar li {
+    border-bottom: solid 1px;
   }
   .navLink {
     color: black;
