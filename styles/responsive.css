@@ -50,7 +50,7 @@
   .navLink {
     color: black;
   }
-  h4 {
-    font-size: clamp(20px, 2vw, 40px)
+  p {
+    display: none;
   }
 }

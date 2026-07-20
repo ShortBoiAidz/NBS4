@@ -99,6 +99,7 @@ h3 {
 h4 {
   font-size: clamp(17px, 2vw, 23px);
   line-height: clamp(40px, 2vw, 70px);
+  text-wrap: balance;
 }
 
 h5 {
