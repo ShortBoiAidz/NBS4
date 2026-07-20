@@ -107,7 +107,7 @@ main {
   -o-border-radius: 25px;
 
   align-items: center;
-  padding: clamp(10px, 4vw, 20px);
+  padding-bottom: clamp(10px, 4vw, 20px);
   padding-top: 0;
 }
 
