@@ -58,105 +58,108 @@
         <span></span>
         <span></span>
       </div>
+      <h1>HelloWorld("print")</h1>
     </div>
 
-    <nav>
-      <ul class="sidebar">
-        <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
-        <li><a href="index.html" class="navLink"><h4 class="active">Home</h4></a></li>
-        <li><a href="players.html" class="navLink"><h4>Players</h4></a></li>
-        <li><a onclick=notAvailable() class="navLink"><h4>Societies</h4></a></li>
-        <li><a onclick=notAvailable() class="navLink"><h4>Gallery</h4></a></li>
-        <li><a onclick=notAvailable() class="navLink"><h4>Roadmap</h4></a></li>
-        <li><a href="https://discord.gg/WKGu4864M5" class="navLink"><h4>Join Here</h4></a></li>
-        <li><a onclick=notAvailable() class="navLink" download><h4>Modrinth File</h4></a></li>
-      </ul>
+    <div class="homepageContainer">
+      <nav>
+        <ul class="sidebar">
+          <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
+          <li><a href="index.html" class="navLink"><h4 class="active">Home</h4></a></li>
+          <li><a href="players.html" class="navLink"><h4>Players</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Societies</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Gallery</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Roadmap</h4></a></li>
+          <li><a href="https://discord.gg/WKGu4864M5" class="navLink"><h4>Join Here</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink" download><h4>Modrinth File</h4></a></li>
+        </ul>
 
-      <ul class="mainNav">
-        <h3 class="navHeader gradient-text">Navigation</h3>
-        <div class="navDivider"></div>
-        <li><a href="index.html" class="gradient-text navLink active"><h4>Home</h4></a></li>
-        <li><a href="players.html" class="gradient-text navLink"><h4>Players</h4></a></li>
-        <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Societies</h4></a></li>
-        <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Gallery</h4></a></li>
-        <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Roadmap</h4></a></li>
-        <li><a href="https://discord.gg/WKGu4864M5" class="gradient-text navLink"><h4>Join Here</h4></a></li>
-        <li><a onclick=notAvailable() class="gradient-text navLink" download><h4>Modrinth File</h4></a></li>
-      </ul>
-    </nav>
-    <i class="fa-solid fa-bars" onclick=openSidebar()></i>
+        <ul class="mainNav">
+          <h3 class="navHeader gradient-text">Navigation</h3>
+          <div class="navDivider"></div>
+          <li><a href="index.html" class="gradient-text navLink active"><h4>Home</h4></a></li>
+          <li><a href="players.html" class="gradient-text navLink"><h4>Players</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Societies</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Gallery</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Roadmap</h4></a></li>
+          <li><a href="https://discord.gg/WKGu4864M5" class="gradient-text navLink"><h4>Join Here</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink" download><h4>Modrinth File</h4></a></li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars" onclick=openSidebar()></i>
 
-    <main>
-      <div class="content">
-        <img
-          src="images/noodleboxLogo.png"
-          alt="NoodleBox Logo"
-          class="logo"
-          onclick="location.href='https://nsb3-archive.surzies.workers.dev/'"
-          title="Take me back to the old times"
-        />
-        <div class="mainCardParent">
-          <div class="homeCard">
-            <h1 class="gradient-text">NoodleBox Season 4</h1>
+      <main>
+        <div class="content">
+          <img
+            src="images/noodleboxLogo.png"
+            alt="NoodleBox Logo"
+            class="logo"
+            onclick="location.href='https://nsb3-archive.surzies.workers.dev/'"
+            title="Take me back to the old times"
+          />
+          <div class="mainCardParent">
+            <div class="homeCard">
+              <h1 class="gradient-text">NoodleBox Season 4</h1>
 
-            <br />
+              <br />
 
-            <sub class="gradient-text"
-              >Coming Soon</sub
-            >
-            <h4 class="gradient-text"
-              >Current Update: 0.0.0</h4
-            >
+              <sub class="gradient-text"
+                >Coming Soon</sub
+              >
+              <h4 class="gradient-text"
+                >Current Update: 0.0.0</h4
+              >
 
-            <br />
+              <br />
 
-            <div class="buttonCardParent">
-              <a href="https://discord.gg/WKGu4864M5">
+              <div class="buttonCardParent">
+                <a href="https://discord.gg/WKGu4864M5">
+                  <div class="buttonCard">
+                    <i
+                      class="fa-brands fa-discord"
+                      style="cursor: pointer"
+                    ></i>
+                  </div>
+                </a>
+
                 <div class="buttonCard">
                   <i
-                    class="fa-brands fa-discord"
+                    class="fa-solid fa-envelope"
+                    onclick="emailClick()"
                     style="cursor: pointer"
                   ></i>
                 </div>
-              </a>
-
-              <div class="buttonCard">
-                <i
-                  class="fa-solid fa-envelope"
-                  onclick="emailClick()"
-                  style="cursor: pointer"
-                ></i>
               </div>
             </div>
           </div>
-        </div>
 
-        <br />
+          <br />
 
-        <div class="h2CardParent">
-          <div class="h2Card">
-            <button onclick="location.href = 'players.html'">
-              <h2>Players</h2>
-              <p>Meet the players who populate NoodleBox</p>
-            </button>
+          <div class="h2CardParent">
+            <div class="h2Card">
+              <button onclick="location.href = 'players.html'">
+                <h2>Players</h2>
+                <p>Meet the players who populate NoodleBox</p>
+              </button>
 
-            <button onclick=notAvailable()>
-              <h2>Societies</h2>
-              <p>NoodleBox is made up of societies. Find out more here</p>
-            </button>
+              <button onclick=notAvailable()>
+                <h2>Societies</h2>
+                <p>NoodleBox is made up of societies. Find out more here</p>
+              </button>
+            </div>
+
+            <div class="mainCardH2">
+              <button onclick=notAvailable()>
+                <h2>Gallery</h2>
+              </button>
+
+              <button onclick=notAvailable()>
+                <h2>Roadmap</h2>
+              </button>
+            </div>
           </div>
-
-          <div class="mainCardH2">
-            <button onclick="location.href = 'gallery.html'">
-              <h2>Gallery</h2>
-            </button>
-
-            <button onclick=notAvailable()>
-              <h2>Roadmap</h2>
-            </button>
-          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>

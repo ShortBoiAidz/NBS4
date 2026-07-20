@@ -25,7 +25,7 @@ body {
 }
 
 body {
-  background-image: url("/images/recolourfulCathedral.png");
+  background-image: url("../images/recolourfulCathedral.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
