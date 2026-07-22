@@ -53,4 +53,35 @@
   p {
     display: none;
   }
+  .playerCardParent {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: y mandatory;
+    width: 250px;
+    height: 300px;
+  }
+  .playerCard {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    height: 300px;
+    width: 250px;
+  }
+  .playerCard:has(h1) {
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: clamp(13px, 2vw, 20px);
+    width: 250px;
+  }
+  .playerCard h1 {
+    margin: 0;
+    font-size: clamp(1em, 2vw, 3em);
+  }
+  .hiddenText {
+    display: flex;
+    text-align: center;
+    font-size: 3em;
+    text-wrap: balance;
+    padding: clamp(10px, 2vw, 20px)
+  }
 }

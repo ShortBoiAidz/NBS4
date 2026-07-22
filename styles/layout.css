@@ -106,7 +106,6 @@ main {
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
-
   align-items: center;
   padding-bottom: clamp(10px, 4vw, 20px);
   padding-top: 0;
@@ -123,7 +122,6 @@ main {
 }
 
 .playerCard {
-  width: clamp(15em, 20em, 30em);
   border-width: 2px;
   border-style: solid;
   justify-content: center;

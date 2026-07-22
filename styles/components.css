@@ -12,6 +12,10 @@
   font-weight: bold;
 }
 
+.hiddenText {
+  display: none;
+}
+
 /* Cards */
 .mainCardParent {
   font-size: 0;
