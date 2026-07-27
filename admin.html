@@ -13,7 +13,7 @@
       content="Copyright 2026 Aiden Thorpe. All rights reserved."
     />
 
-    <title>NoodleBox SMP | Homepage</title>
+    <title>NoodleBox SMP | Admin Panel</title>
 
     <link rel="icon" type="image/x-icon" href="/images/noodleboxLogo.png" />
 
@@ -42,10 +42,12 @@
     <link rel="stylesheet" href="styles/animations.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
     <link rel="stylesheet" href="styles/other.css" />
+    <link rel="stylesheet" href="styles/admin.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/loader.js"></script>
     <script src="scripts/webhook.js"></script>
+    <script src="scripts/admin.js"></script>
 
     <link rel="canonical" href="https://noodlebox.cc" />
   </head>
@@ -62,57 +64,52 @@
     </div>
 
     <div class="homepageContainer">
-      <main>
+
+      <!-- LOGIN -->
+      <div class="content adminContent" id="loginForm">
+        <img
+            src="images/noodleboxLogo.png"
+            alt="NoodleBox Logo"
+            class="logo adminLogo"
+          />
+        <div class="mainCardParent">
+          <div class="homeCard adminCard">
+            <h1 class="gradient-text">ADMIN PANEL</h1>
+            <sub id="incorrectID">Fuck off</sub>
+            <form class="formBox">
+              <input type="password" name="password" id="password" placeholder="Enter user ID">
+              <button onclick="adminLogin()" class="loginButton" type="button">
+                <h2>Log In</h2>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADMIN ONLY -->
+      <main id="adminOnly">
         <div class="content">
           <img
             src="images/noodleboxLogo.png"
             alt="NoodleBox Logo"
             class="logo"
           />
-          <div class="mainCardParent">
+          <div class="mainCardParent adminCardParent">
             <div class="homeCard">
-              <h1 class="gradient-text">Webhook Sender</h1>
+              <h1 class="gradient-text">ADMIN PANEL</h1>
 
               <br />
 
-              <sub class="gradient-text"
-                >ADMIN ONLY</sub
-              >
-              <br>
-              <h4 class="gradient-text"
-                >Send messages through webhooks</h4
-              >
-
-              <br />
-
-              <div class="buttonCardParent">
-                <a href="https://discord.gg/WKGu4864M5">
-                  <div class="buttonCard">
-                    <i
-                      class="fa-brands fa-discord"
-                      style="cursor: pointer"
-                    ></i>
-                  </div>
-                </a>
-
-                <div class="buttonCard">
-                  <i
-                    class="fa-solid fa-envelope"
-                    onclick="emailClick()"
-                    style="cursor: pointer"
-                  ></i>
-                </div>
-              </div>
+              <sub class="gradient-text">Admin Only</sub>
             </div>
           </div>
 
-          <br />
-
           <div class="h2CardParent">
+            <h2 class="gradient-text webhookTitle">Webhook Sender</h2>
             <textarea id="message" placeholder="Enter message"></textarea>
-            <button onclick="message()" class="messageButton">
-                <h2>Send message</h2>
-              </button>
+            <button onclick="message()" class="messageButton" type="button">
+              <h2>Send message</h2>
+            </button>
           </div>
         </div>
       </main>

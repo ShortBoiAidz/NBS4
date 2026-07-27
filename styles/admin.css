@@ -1,0 +1,78 @@
+#loginForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main#adminOnly {
+  display: none;
+}
+
+h3.admin {
+  margin: 1em;
+}
+
+.adminCard {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+input {
+  background: linear-gradient(45deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 50%;
+  border-color: var(--lightGradPrim);
+  color: rgb(173, 168, 168);
+}
+
+.adminLogo {
+  max-width: 20%;
+}
+
+.adminContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loginButton {
+  margin: auto;
+  width: fit-content;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#incorrectID {
+  color: rgb(172, 2, 2);
+  display: none;
+}
+
+.webhookTitle {
+  font-size: clamp(13px, 2vw, 45px);
+}
+
+textarea {
+  min-width: clamp(12.5px, 2vw, 15px);
+  font-size: clamp(12px, 2vw, 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.2em;
+}
