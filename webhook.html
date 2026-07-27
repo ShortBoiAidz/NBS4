@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="Minecraft, Server, Homepage, NoodleBox, Season 3, NBS3"
+    />
+    <meta name="author" content="ShortBoiAidz, Aiden Thorpe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="copyright"
+      content="Copyright 2026 Aiden Thorpe. All rights reserved."
+    />
+
+    <title>NoodleBox SMP | Homepage</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/noodleboxLogo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/other.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/webhook.js"></script>
+
+    <link rel="canonical" href="https://noodlebox.cc" />
+  </head>
+
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="homepageContainer">
+      <main>
+        <div class="content">
+          <img
+            src="images/noodleboxLogo.png"
+            alt="NoodleBox Logo"
+            class="logo"
+          />
+          <div class="mainCardParent">
+            <div class="homeCard">
+              <h1 class="gradient-text">Webhook Sender</h1>
+
+              <br />
+
+              <sub class="gradient-text"
+                >ADMIN ONLY</sub
+              >
+              <br>
+              <h4 class="gradient-text"
+                >Send messages through webhooks</h4
+              >
+
+              <br />
+
+              <div class="buttonCardParent">
+                <a href="https://discord.gg/WKGu4864M5">
+                  <div class="buttonCard">
+                    <i
+                      class="fa-brands fa-discord"
+                      style="cursor: pointer"
+                    ></i>
+                  </div>
+                </a>
+
+                <div class="buttonCard">
+                  <i
+                    class="fa-solid fa-envelope"
+                    onclick="emailClick()"
+                    style="cursor: pointer"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="h2CardParent">
+            <textarea id="message" placeholder="Enter message"></textarea>
+            <button onclick="message()" class="messageButton">
+                <h2>Send message</h2>
+              </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

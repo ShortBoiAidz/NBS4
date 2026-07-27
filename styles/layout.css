@@ -84,6 +84,30 @@ main {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
+
+  &:has(textarea) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+textarea {
+  background: linear-gradient(45deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
+  text-align: center;
+  font-size: 2em;
+  margin: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 50%;
+  border-color: var(--lightGradPrim);
+  color: rgb(173, 168, 168);
+}
+
+.messageButton {
+  margin: 0;
 }
 
 .h2CardParent,
