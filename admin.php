@@ -31,6 +31,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -111,6 +112,33 @@
               <h2>Send message</h2>
             </button>
           </div>
+
+          <div class="h2CardParent">
+            <h2 class="gradient-text webhookTitle">User Data</h2>
+            <table border = 1>
+              <tr>
+                <td>ID</td>
+                <td>IP</td>
+                <td>ISP</td>
+                <td>Country</td>
+                <td>City</td>
+              </tr>
+              <?php
+              require 'config.php';
+              $rows = mysqli_query($conn, "SELECT * FROM tb_data");
+              ?>
+              <?php foreach($rows as $row) : ?>
+              <tr>
+                <td>Visitor <?php echo $row["$id"]; ?></td>
+                <td><?php echo $row["$ip"]; ?></td>
+                <td><?php echo $row["$isp"]; ?></td>
+                <td><?php echo $row["$country"]; ?></td>
+                <td><?php echo $row["$city"]; ?></td>
+              </tr>
+              <?php endforeach; ?>
+            </table>
+          </div>
+
         </div>
       </main>
     </div>
