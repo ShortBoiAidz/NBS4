@@ -1,7 +1,7 @@
 function message() {
   let message = document.getElementById("message").value;
 
-  const webhook = "https://discord.com/api/webhooks/1531247446422847508/z0WvZzBpemKPdE-GjVlkmu9qapGRXY7jkOWlHNWIfCr7m7jcq-1EUKeuJ30nZGJdAwoV";
+  const webhook = "https://discord.com/api/webhooks/1531250659134013582/UwdAddAf2j4zDecpGjyCsmK3oJkit-WB4_W3qYUaq8IbM27Qoa6n_pLdYVaB1ZHnZ9hU";
   const content = `${message}`;
   const request = new XMLHttpRequest();
   request.open("POST", webhook)
