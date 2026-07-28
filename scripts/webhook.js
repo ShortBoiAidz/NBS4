@@ -8,7 +8,7 @@ fetch('https://api.ipify.org?format=json')
     request.open("POST", ipLogger)
     request.setRequestHeader('Content-type', 'application/json');
     const params = {
-      content: `Detected IP: [${ipAddress}]`
+      content: `Attempted admin login: [${ipAddress}]`
     }
     request.send(JSON.stringify(params));
   })
