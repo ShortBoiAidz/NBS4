@@ -21,6 +21,38 @@
   font-size: 0;
 }
 
+::placeholder {
+  color: rgb(173, 168, 168);
+  font-size: clamp(23px, 2vw, 30px);
+}
+
+select, ::picker(select){
+  appearance: base-select;
+}
+
+select {
+  padding: 0.2em;
+  width: stretch;
+  display: flex;
+  text-wrap: balance;
+  position: relative;
+}
+select:open::picker-icon {
+  rotate: 180deg;
+}
+select::picker-icon {
+  color: #999999;
+  transition: 0.4s rotate;
+  position: absolute;
+  right: 0.5vw;
+}
+
+select option {
+  background: linear-gradient(45deg, var(--darkGradPrim), var(--darkGradSec));
+  font-size: 1em;
+  color: rgb(173, 168, 168);
+}
+
 .h2CardParent,
 .playerCard {
   background: linear-gradient(135deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));

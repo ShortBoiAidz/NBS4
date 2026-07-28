@@ -36,6 +36,9 @@
   h3 {
     font-size: 22px;
   }
+  select option {
+    font-size: 50%
+  }
 }
 
 @media (max-width: 450px) {
@@ -83,5 +86,14 @@
     font-size: 3em;
     text-wrap: balance;
     padding: clamp(10px, 2vw, 20px)
+  }
+}
+
+@media (max-width: 450px) {
+  ::picker-icon {
+    display: none;
+  }
+  select {
+    text-decoration: underline;
   }
 }

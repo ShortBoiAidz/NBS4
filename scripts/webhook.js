@@ -1,9 +1,14 @@
 function message() {
+  const dropdown = document.getElementById("webhooks");
   let message = document.getElementById("message").value;
-  let webhook = document.getElementById("webhookLink").value;
-
+  let testServer = document.getElementById("webhookTest");
+  let generalChat = document.getElementById("generalChat");
+  let webhook = dropdown.value;
   const content = `${message}`;
   const request = new XMLHttpRequest();
+
+  generalChat.value = "https://discord.com/api/webhooks/1531582486050508952/y_igwEGAWS2fbgsBiVId3dq1WOuMdxFWrlpO1jFs0E1LzyWxpj6pYAoVzDAHDqNoM3uZ";
+  testServer.value = "https://discord.com/api/webhooks/1531283800066228315/PL7PfF3UgCCxD87ksn-E_lTH9Q8K4VkAHy-2FnFKWnbNH_iR3XLnBnQ1DCqfX0RnnR4Q";
 
   request.open("POST", webhook)
   request.setRequestHeader('Content-type', 'application/json');
@@ -17,7 +22,7 @@ function websiteUpdate() {
   let message = document.getElementById("messageContent").value;
   let heading = document.getElementById("heading").value;
   let subheading = document.getElementById("subheading").value;
-  let webhook = "https://discord.com/api/webhooks/1531479914442915932/jsRjOAQCr_JXwri0nCeWZx4Fy3uyXDcK4w_AHMax9XJ68ysbxH7jIQEWuxaPRIRnNDmq";
+  let webhook = "https://discord.com/api/webhooks/1531547235710664766/bfrwBglqLK5uRW84nTGUMP1SLVD3nVzqXUyi8Ty_55KvbmTR4EKnDFAqTs2uy8E6lg8p";
 
   const content = `# ${heading} \n ### ${subheading} \n ${message}`;
   const request = new XMLHttpRequest();

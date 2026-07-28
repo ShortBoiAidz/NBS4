@@ -67,6 +67,31 @@
     <div class="homepageContainer">
 
       <!-- LOGIN -->
+       <nav>
+        <ul class="sidebar">
+          <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
+          <li><a href="index.html" class="navLink"><h4>Home</h4></a></li>
+          <li><a href="players.html" class="navLink"><h4>Players</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Societies</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Gallery</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Roadmap</h4></a></li>
+          <li><a href="https://discord.gg/k8M3CMXGmx" class="navLink"><h4>Join Here</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink" download><h4>Modrinth File</h4></a></li>
+        </ul>
+
+        <ul class="mainNav">
+          <h3 class="navHeader gradient-text">Navigation</h3>
+          <div class="navDivider"></div>
+          <li><a href="index.html" class="gradient-text navLink"><h4>Home</h4></a></li>
+          <li><a href="players.html" class="gradient-text navLink"><h4>Players</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Societies</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Gallery</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Roadmap</h4></a></li>
+          <li><a href="https://discord.gg/k8M3CMXGmx" class="gradient-text navLink"><h4>Join Here</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink" download><h4>Modrinth File</h4></a></li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars" onclick=openSidebar()></i>
       <div class="content adminContent" id="loginForm">
         <img
             src="images/noodleboxLogo.png"
@@ -108,9 +133,14 @@
           <div class="flexRow">
             <div class="h2CardParent">
               <h2 class="gradient-text webhookTitle">Webhook Sender</h2>
-              <a href="scripts/webhooks.json" target="_blank"><sub class="webhookList">List of webhooks</sub></a>
-              <input type="url" name="webhook" id="webhookLink" placeholder="Webhook Link">
+
+              <select name="webhooks" id="webhooks">
+                <option value="generalChat" id="generalChat">General Chat</option>
+                <option value="webhookTest" id="webhookTest">Webhook Test</option>
+              </select>
+
               <textarea id="message" placeholder="Enter message"></textarea>
+
               <button onclick="message()" class="messageButton" type="button">
                 <h2>Send message</h2>
               </button>
@@ -118,9 +148,11 @@
 
             <div class="h2CardParent gradFlipX">
               <h2 class="gradient-text webhookTitle">Website Updater</h2>
+
               <textarea id="heading" placeholder="Enter version"></textarea>
               <textarea id="subheading" placeholder="Enter feature"></textarea>
               <textarea id="messageContent" placeholder="Enter content"></textarea>
+
               <button onclick="websiteUpdate()" class="messageButton" type="button">
                 <h2>Send message</h2>
               </button>
