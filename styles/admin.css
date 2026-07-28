@@ -65,6 +65,12 @@ input#webhookLink::placeholder {
   align-items: center;
 }
 
+.h2CardParent:has(textarea) {
+  width: clamp(600px, 3vw, 800px);
+  margin: 2em;
+  justify-content: space-between;
+}
+
 #incorrectID {
   color: rgb(172, 2, 2);
   display: none;

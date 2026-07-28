@@ -3,9 +3,9 @@ function adminLogin() {
   const mainContent = document.getElementById("adminOnly");
   const loginForm = document.getElementById("loginForm");
   const incorrectID = document.getElementById("incorrectID");
-  let isOwner = false;
+  let isOwner = true;
 
-  adminUsers = ["ShortBoiAidz", "paulblart", "1"];
+  adminUsers = ["ShortBoiAidz", "paulblart", "1", "lewisJohnLewis"];
 
   if (adminUsers.includes(adminID) || isOwner) {
       loginForm.style.display = "none";

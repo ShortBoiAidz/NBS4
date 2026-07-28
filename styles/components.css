@@ -26,6 +26,10 @@
   background: linear-gradient(135deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
 }
 
+.gradFlipX {
+  background: linear-gradient(225deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
+}
+
 .playerCard {
   border-color: var(--darkGradPrimTrans);
 }

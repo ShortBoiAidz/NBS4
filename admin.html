@@ -105,14 +105,26 @@
             </div>
           </div>
 
-          <div class="h2CardParent">
-            <h2 class="gradient-text webhookTitle">Webhook Sender</h2>
-            <input type="url" name="webhook" id="webhookLink" placeholder="Webhook Link">
-            <a href="scripts/webhooks.json"><sub class="webhookList">List of webhooks</sub></a>
-            <textarea id="message" placeholder="Enter message"></textarea>
-            <button onclick="message()" class="messageButton" type="button">
-              <h2>Send message</h2>
-            </button>
+          <div class="flexRow">
+            <div class="h2CardParent">
+              <h2 class="gradient-text webhookTitle">Webhook Sender</h2>
+              <a href="scripts/webhooks.json" target="_blank"><sub class="webhookList">List of webhooks</sub></a>
+              <input type="url" name="webhook" id="webhookLink" placeholder="Webhook Link">
+              <textarea id="message" placeholder="Enter message"></textarea>
+              <button onclick="message()" class="messageButton" type="button">
+                <h2>Send message</h2>
+              </button>
+            </div>
+
+            <div class="h2CardParent gradFlipX">
+              <h2 class="gradient-text webhookTitle">Website Updater</h2>
+              <textarea id="heading" placeholder="Enter version"></textarea>
+              <textarea id="subheading" placeholder="Enter feature"></textarea>
+              <textarea id="messageContent" placeholder="Enter content"></textarea>
+              <button onclick="websiteUpdate()" class="messageButton" type="button">
+                <h2>Send message</h2>
+              </button>
+            </div>
           </div>
         </div>
       </main>
