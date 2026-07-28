@@ -165,6 +165,7 @@ textarea {
   justify-content: center;
   align-items: center;
   height: stretch;
+  width: 20em;
 }
 
 .buttonCardParent {

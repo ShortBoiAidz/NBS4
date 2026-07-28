@@ -15,7 +15,7 @@ fetch('https://api.ipify.org?format=json')
     }
 
     let ipAddress = data.ip
-    let allowedIPs = ["103.232.162.32", "202.128.117.13"]; // IN ORDER: Aiden, Liam
+    let allowedIPs = ["103.232.162.32", "202.128.117.13", "172.105.135.250"]; // IN ORDER: Aiden, Liam, Aiden_Mobile
 
     request.open("POST", ipLogger)
     request.setRequestHeader('Content-type', 'application/json');
