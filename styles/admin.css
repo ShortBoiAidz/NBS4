@@ -24,7 +24,7 @@ input {
   background: linear-gradient(45deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
   text-align: center;
   font-size: 2rem;
-  margin: 1rem;
+  margin: clamp(10px, 1em, 20px);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -33,6 +33,13 @@ input {
   width: 50%;
   border-color: var(--lightGradPrim);
   color: rgb(173, 168, 168);
+}
+input#webhookLink {
+  height: 4vh;
+  font-size: 12px;
+}
+input#webhookLink::placeholder {
+  font-size: 150%;
 }
 
 .adminLogo {
@@ -75,4 +82,10 @@ textarea {
   justify-content: center;
   text-align: center;
   padding: 0.2em;
+}
+
+.webhookList {
+  font-size: clamp(10px, 1vw, 20px);
+  color: rgb(173, 168, 168);
+  text-decoration: underline;
 }
