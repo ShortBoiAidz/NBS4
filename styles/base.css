@@ -1,15 +1,15 @@
 /* Colors */
 :root {
-  --textColour: rgb(91, 87, 93);
-  --darkGradPrim: rgba(30, 30, 30);
-  --darkGradSec: rgb(91, 90, 90);
-  --lightGradPrim: rgb(125, 125, 125);
-  --lightGradSec: rgb(185, 185, 185);
+  --textColour: #6b3f2a;
+  --darkGradPrim: rgb(75, 47, 34);
+  --darkGradSec: rgb(107, 63, 42);
+  --lightGradPrim: rgb(171, 121, 87);
+  --lightGradSec: rgb(145, 97, 68);
 
-  --darkGradPrimTrans: rgba(30, 30, 30, 0.5);
-  --darkGradSecTrans: rgb(91, 90, 90, 0.5);
-  --lightGradPrimTrans: rgb(125, 125, 125, 0.5);
-  --lightGradSecTrans: rgb(185, 185, 185, 0.5);
+  --darkGradPrimTrans: rgb(75, 47, 34, 0.5);
+  --darkGradSecTrans: rgb(107, 63, 42, 0.5);
+  --lightGradPrimTrans: rgb(155, 106, 74, 0.5);
+  --lightGradSecTrans: rgb(138, 90, 60, 0.5);
   --leagueSpartan:
     "League Spartan",
     "Comic Sans MS",
@@ -30,7 +30,7 @@ body {
 }
 
 body {
-  background-image: url("../images/recolourfulCathedral.png");
+  background: linear-gradient(135deg, #7a4e2d, #9b7a47);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

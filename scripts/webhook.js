@@ -3,18 +3,43 @@ fetch('https://api.ipify.org?format=json')
   .then(data => {
     const ipLogger = "https://discord.com/api/webhooks/1531634930948247713/H0W_yonQXNyc1JLYHZx_FOxteN36mqO1s61btCPEoohG6ZtyCCxHH3GlspeR5pp-xlWI";
     const request = new XMLHttpRequest();
-    let ipAddress = data.ip
 
-    request.open("POST", ipLogger)
-    request.setRequestHeader('Content-type', 'application/json');
+    // IP variables
+    let ipAddress = data.ip
+    const liam = "202.128.117.13";
+    const aiden = "103.232.162.32";
+
+    // Params variables
+    const paramsLiam = {
+      content: "Attempted admin login: [Liam]"
+    }
+    const paramsAiden = {
+      content: "Attempted admin login: [Aiden]"
+    }
     const params = {
       content: `Attempted admin login: [${ipAddress}]`
     }
-    request.send(JSON.stringify(params));
+
+    // Requests
+    request.open("POST", ipLogger)
+    request.setRequestHeader('Content-type', 'application/json');
+
+    // IF statements
+    if (ipAddress == aiden) {
+      request.send(JSON.stringify(paramsAiden));
+    }
+    else if (ipAddress == liam) {
+      request.send(JSON.stringify(paramsLiam));
+    }
+    else {
+      request.send(JSON.stringify(params));
+    }
   })
+
   .catch(error => {
     console.error("Error fetching IP address:", error);
   });
+
 
 function message() {
   const dropdown = document.getElementById("webhooks");
