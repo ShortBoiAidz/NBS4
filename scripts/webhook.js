@@ -1,44 +1,45 @@
-fetch('https://api.ipify.org?format=json')
-  .then(response => response.json())
-  .then(data => {
-    const ipLogger = "https://discord.com/api/webhooks/1531634930948247713/H0W_yonQXNyc1JLYHZx_FOxteN36mqO1s61btCPEoohG6ZtyCCxHH3GlspeR5pp-xlWI";
-    const request = new XMLHttpRequest();
+toggleIPLog = true;
 
-    // IP variables
-    let ipAddress = data.ip
-    const liam = "202.128.117.13";
-    const aiden = "103.232.162.32";
+if (toggleIPLog) {
+  fetch('https://api.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => {
+      const ipLogger = "https://discord.com/api/webhooks/1531634930948247713/H0W_yonQXNyc1JLYHZx_FOxteN36mqO1s61btCPEoohG6ZtyCCxHH3GlspeR5pp-xlWI";
+      const request = new XMLHttpRequest();
 
-    // Params variables
-    const paramsLiam = {
-      content: "Attempted admin login: [Liam]"
-    }
-    const paramsAiden = {
-      content: "Attempted admin login: [Aiden]"
-    }
-    const params = {
-      content: `Attempted admin login: [${ipAddress}]`
-    }
+      // IP variables
+      let ipAddress = data.ip
+      const liam = "202.128.117.13";
+      const aiden = "103.232.162.32";
 
-    // Requests
-    request.open("POST", ipLogger)
-    request.setRequestHeader('Content-type', 'application/json');
+      // Params variables
+      const params = {
+        content: "Attempted admin login: "
+      }
 
-    // IF statements
-    if (ipAddress == aiden) {
-      request.send(JSON.stringify(paramsAiden));
-    }
-    else if (ipAddress == liam) {
-      request.send(JSON.stringify(paramsLiam));
-    }
-    else {
-      request.send(JSON.stringify(params));
-    }
-  })
+      // Requests
+      request.open("POST", ipLogger)
+      request.setRequestHeader('Content-type', 'application/json');
 
-  .catch(error => {
-    console.error("Error fetching IP address:", error);
-  });
+      // IF statements
+      if (ipAddress == aiden) {
+        request.send(JSON.stringify(params + "[Aiden]"));
+        document.title = "ShortBoiAidz | Admin Panel";
+      }
+      else if (ipAddress == liam) {
+        request.send(JSON.stringify(paramsLiam));
+        document.title = "NemoMan_Dude72 | Admin Panel"
+      }
+      else {
+        request.send(JSON.stringify(params));
+        document.title = "Who the fuck are you !?!"
+      }
+    })
+
+    .catch(error => {
+      console.error("Error fetching IP address:", error);
+    });
+}
 
 
 function message() {

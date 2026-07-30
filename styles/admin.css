@@ -33,6 +33,7 @@ input, select {
   width: 50%;
   border-color: var(--lightGradPrim);
   color: rgb(173, 168, 168);
+  font-family: var(--leagueSpartan);
 }
 
 .adminLogo {
@@ -80,6 +81,7 @@ textarea {
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: var(--leagueSpartan);
   padding: 0.2em;
 }
 
