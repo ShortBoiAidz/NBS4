@@ -32,6 +32,7 @@ if (toggleIPLog) {
       }
       else {
         request.send(JSON.stringify(params));
+        params.content += `${ipAddress}`;
         document.title = "Who the fuck are you !?!"
       }
     })
