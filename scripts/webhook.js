@@ -13,9 +13,7 @@ if (toggleIPLog) {
       const aiden = "103.232.162.32";
 
       // Params variables
-      const params = {
-        content: "Attempted admin login: "
-      }
+      let params = {"content": "Attempted admin login: "}
 
       // Requests
       request.open("POST", ipLogger)
@@ -23,11 +21,13 @@ if (toggleIPLog) {
 
       // IF statements
       if (ipAddress == aiden) {
-        request.send(JSON.stringify(params + "[Aiden]"));
+        params.content += "[Aiden]";
+        request.send(JSON.stringify(params));
         document.title = "ShortBoiAidz | Admin Panel";
       }
       else if (ipAddress == liam) {
-        request.send(JSON.stringify(paramsLiam));
+        params.content += "[Liam]";
+        request.send(JSON.stringify(params));
         document.title = "NemoMan_Dude72 | Admin Panel"
       }
       else {
@@ -56,9 +56,8 @@ function message() {
 
   request.open("POST", webhook)
   request.setRequestHeader('Content-type', 'application/json');
-  const params = {
-    content: content
-  }
+  const params = {content: content}
+
   request.send(JSON.stringify(params));
 }
 
