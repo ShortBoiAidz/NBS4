@@ -3,7 +3,7 @@ function adminLogin() {
   const mainContent = document.getElementById("adminOnly");
   const loginForm = document.getElementById("loginForm");
   const incorrectID = document.getElementById("incorrectID");
-  let isOwner = true;
+  let isOwner = false;
 
   adminUsers = ["ShortBoiAidz", "paulblart", "1", "lewisJohnLewis"];
 

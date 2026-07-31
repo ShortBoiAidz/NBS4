@@ -31,8 +31,8 @@ if (toggleIPLog) {
         document.title = "NemoMan_Dude72 | Admin Panel"
       }
       else {
-        request.send(JSON.stringify(params));
         params.content += `${ipAddress}`;
+        request.send(JSON.stringify(params));
         document.title = "Who the fuck are you !?!"
       }
     })
