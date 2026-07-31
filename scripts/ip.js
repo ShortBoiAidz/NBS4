@@ -42,7 +42,8 @@ fetch('https://api.ipify.org?format=json')
       request.send(JSON.stringify(params));
     }
     else {
-      request.send(JSON.stringify(params + `[${ipAddress}]`));
+      params.content += `${ipAddress}`;
+      request.send(JSON.stringify(params));
     }
   })
 
