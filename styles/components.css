@@ -7,6 +7,20 @@
   color: transparent;
 }
 
+.gradient-text-h2 {
+  background: linear-gradient(90deg, var(--darkGradPrim), var(--darkGradSec));
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.gradient-text-h2:hover {
+  background: linear-gradient(90deg, var(--darkGradSec), var(--darkGradPrim));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .active {
   text-decoration: underline;
   font-weight: bold;
@@ -84,7 +98,7 @@ select option {
 }
 
 .navDivider {
-  background: linear-gradient(-90deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
+  background: linear-gradient(-90deg, var(--lightGradPrim), var(--lightGradSecTrans));
 }
 
 .h2CardParent {
@@ -120,4 +134,8 @@ select option {
 
 .fa-rectangle-xmark {
   color: var(--darkGradPrim)
+}
+
+.headerIcon {
+  color: #503b21;
 }

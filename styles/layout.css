@@ -60,6 +60,7 @@ textarea::placeholder {
   flex-direction: column;
   z-index: 1000;
   width: fit-content;
+  position: fixed;
 }
 
 .content {
@@ -243,6 +244,11 @@ textarea {
   z-index: 999;
   cursor: pointer;
   margin-top: 10px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
 }
 
 .playerHead {
@@ -257,6 +263,6 @@ textarea {
   top: 0;
   right: 0;
   margin: 10px;
-  position: absolute;
+  position: fixed;
   z-index: 10000
 }
