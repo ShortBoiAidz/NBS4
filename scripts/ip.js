@@ -13,6 +13,7 @@ fetch('https://api.ipify.org?format=json')
     const corey = "110.148.148.24";
     const lewis1 = "172.225.230.50";
     const lewis2 = "104.28.35.4";
+    const lewis3 = "172.225.60.24";
 
     const params = {
       content: "Website accessed: "
@@ -43,7 +44,7 @@ fetch('https://api.ipify.org?format=json')
       params.content += "[Corey]";
       request.send(JSON.stringify(params));
     }
-    else if (ipAddress == lewis1 || ipAddress == lewis2) {
+    else if (ipAddress == lewis1 || ipAddress == lewis2 || ipAddress == lewis3) {
       params.content += "[Lewis]";
       request.send(JSON.stringify(params));
     }
