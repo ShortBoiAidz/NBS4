@@ -11,7 +11,7 @@ fetch('https://api.ipify.org?format=json')
     const aiden = "103.232.162.32";
     const sam = "101.190.15.247";
     const corey = "110.148.148.24";
-    const lewis = ["172.225.230.50", "104.28.35.4", "172.225.60.24", "146.75.190.34"];
+    const lewis = ["172.225.230.50", "104.28.35.4", "172.225.60.24", "146.75.190.34", "146.75.190.35"];
 
     const params = {
       content: "Website accessed: "

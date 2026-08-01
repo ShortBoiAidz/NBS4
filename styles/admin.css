@@ -36,10 +36,6 @@ input, select {
   font-family: var(--leagueSpartan);
 }
 
-.adminLogo {
-  max-width: 20%;
-}
-
 .adminContent {
   display: flex;
   justify-content: center;

@@ -14,14 +14,16 @@
 }
 
 @media (max-width: 700px) {
-  .logo {
+  .logo,
+  .adminLogo {
     width: 40%;
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 500px) {
-  .logo {
+  .logo,
+  .adminLogo {
     width: 50%;
     margin-bottom: 10px;
   }
