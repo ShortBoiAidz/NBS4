@@ -238,12 +238,16 @@ textarea {
   -o-transform: translate(140%, -30%);
 }
 
-.logo {
+.logo,
+.adminLogo {
   width: 25%;
   height: auto;
   z-index: 999;
   cursor: pointer;
   margin-top: 10px;
+}
+
+.logo {
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
