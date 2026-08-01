@@ -22,23 +22,23 @@ fetch('https://api.ipify.org?format=json')
     request.setRequestHeader('Content-Type', 'application/json');
 
     // IF statements
-    if (ipAddress == joel) {
+    if (joel.includes(ipAddress)) {
       params.content += "[Joel]";
       request.send(JSON.stringify(params));
     }
-    else if (ipAddress == aiden) {
+    else if (aiden.includes(ipAddress)) {
       params.content += "[Aiden]";
       request.send(JSON.stringify(params));
     }
-    else if (ipAddress == liam) {
+    else if (liam.includes(ipAddress)) {
       params.content += "[Liam]";
       request.send(JSON.stringify(params));
     }
-    else if (ipAddress == sam) {
+    else if (sam.includes(ipAddress)) {
       params.content += "[Sam]";
       request.send(JSON.stringify(params));
     }
-    else if (ipAddress == corey) {
+    else if (corey.includes(ipAddress)) {
       params.content += "[Corey]";
       request.send(JSON.stringify(params));
     }
