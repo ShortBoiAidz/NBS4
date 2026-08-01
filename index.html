@@ -78,13 +78,13 @@
         <ul class="mainNav">
           <h3 class="navHeader gradient-text">Navigation</h3>
           <div class="navDivider"></div>
-          <li><a href="index.html" class="gradient-text navLink active"><h4>Home</h4></a></li>
-          <li><a href="players.html" class="gradient-text navLink"><h4>Players</h4></a></li>
-          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Societies</h4></a></li>
-          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Gallery</h4></a></li>
-          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Roadmap</h4></a></li>
-          <li><a href="https://discord.gg/k8M3CMXGmx" class="gradient-text navLink"><h4>Join Here</h4></a></li>
-          <li><a onclick=notAvailable() class="gradient-text navLink" download><h4>Modrinth File</h4></a></li>
+          <li><a href="index.html" class="gradient-text navLink active availableButton"><h4>Home</h4></a></li>
+          <li><a href="players.html" class="gradient-text navLink availableButton"><h4>Players</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton"><h4>Societies</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton"><h4>Gallery</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton"><h4>Roadmap</h4></a></li>
+          <li><a href="https://discord.gg/k8M3CMXGmx" class="gradient-text navLink availableButton"><h4>Join Here</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton" download><h4>Modrinth File</h4></a></li>
         </ul>
       </nav>
       <i class="fa-solid fa-bars" onclick=openSidebar()></i>
@@ -116,7 +116,7 @@
 
               <div class="buttonCardParent">
                 <a href="https://discord.gg/k8M3CMXGmx">
-                  <div class="buttonCard">
+                  <div class="buttonCard availableButton">
                     <i
                       class="fa-brands fa-discord headerIcon"
                       style="cursor: pointer"
@@ -124,7 +124,7 @@
                   </div>
                 </a>
 
-                <div class="buttonCard">
+                <div class="buttonCard availableButton">
                   <i
                     class="fa-solid fa-envelope headerIcon"
                     onclick="emailClick()"
@@ -139,23 +139,23 @@
 
           <div class="h2CardParent">
             <div class="h2Card">
-              <button onclick="location.href = 'players.html'">
+              <button onclick="location.href = 'players.html'" class="availableButton">
                 <h2 class="gradient-text-h2">Players</h2>
                 <p class="gradient-text-h2">Meet the players who populate NoodleBox</p>
               </button>
 
-              <button onclick=notAvailable()>
+              <button onclick=notAvailable() class="notAvailableButton">
                 <h2 class="gradient-text-h2">Societies</h2>
                 <p class="gradient-text-h2">NoodleBox is made up of societies. Find out more here</p>
               </button>
             </div>
 
             <div class="mainCardH2">
-              <button onclick=notAvailable()>
+              <button onclick=notAvailable() class="notAvailableButton">
                 <h2 class="gradient-text-h2">Gallery</h2>
               </button>
 
-              <button onclick=notAvailable()>
+              <button onclick=notAvailable() class="notAvailableButton">
                 <h2 class="gradient-text-h2">Roadmap</h2>
               </button>
             </div>

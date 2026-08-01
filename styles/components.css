@@ -30,6 +30,11 @@
   display: none;
 }
 
+.notAvailableButton {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /* Cards */
 .mainCardParent {
   font-size: 0;

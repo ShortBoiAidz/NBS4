@@ -24,6 +24,18 @@
   animation: scale 1.5s linear infinite;
 }
 
+.availableButton {
+  transition: transform 0.5s ease;
+}
+.availableButton:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
 /* Individual blocks */
 .loading span:nth-child(1) {
   background: var(--darkGradSec);
