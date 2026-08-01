@@ -80,7 +80,7 @@ function websiteUpdate() {
   let subheading = document.getElementById("subheading").value;
   let webhook = "https://discord.com/api/webhooks/1531547235710664766/bfrwBglqLK5uRW84nTGUMP1SLVD3nVzqXUyi8Ty_55KvbmTR4EKnDFAqTs2uy8E6lg8p";
 
-  const content = `# ${heading} \n ### ${subheading} \n ${message}`;
+  const content = `# ${heading} \n ### ${subheading} \n ${message} \n \n -# Release notes: https://github.com/ShortBoiAidz/NBS4/releases`;
   const request = new XMLHttpRequest();
 
   request.open("POST", webhook)
