@@ -56,6 +56,7 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/loader.js"></script>
+    <script src="scripts/themes.js"></script>
   </head>
 
   <body>
@@ -94,6 +95,9 @@
       </ul>
     </nav>
     <i class="fa-solid fa-bars" onclick=openSidebar()></i>
+
+    <i class="fa-regular fa-moon" onclick="toggleDarkMode()" id="themeToggleMoon" title="Toggle Dark Mode"></i>
+    <i class="fa-regular fa-sun" onclick="toggleLightMode()" id="themeToggleSun" title="Toggle Light Mode"></i>
 
     <main>
       <div class="content">
@@ -247,10 +251,10 @@
             <div class="playerCard">
               <img
                 src="/images/SengokuTheBuddha.png"
-                alt="SengokuTheBuddha"
+                alt="Jebifyer"
                 class="playerHead"
               />
-              <h2 class="gradient-text playerName">SengokuTheBuddha</h2>
+              <h2 class="gradient-text playerName">Jebifyer</h2>
               <div class="playerInfoCard">
                 <h3>He/Him</h3>
               </div>
@@ -279,5 +283,14 @@
         </section>
       </div>
     </main>
+
+    <script>
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        toggleDarkMode();
+      } else {
+        toggleLightMode();
+      }
+    </script>
   </body>
 </html>

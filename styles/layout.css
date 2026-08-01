@@ -271,3 +271,22 @@ textarea {
   position: fixed;
   z-index: 10000
 }
+
+.fa-moon {
+  display: block;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  position: absolute;
+  z-index: 10000;
+  cursor: pointer;
+}
+.fa-sun {
+  display: none;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  position: absolute;
+  z-index: 10000;
+  cursor: pointer;
+}

@@ -53,6 +53,7 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/loader.js"></script>
+    <script src="scripts/themes.js"></script>
   </head>
 
   <body>
@@ -217,5 +218,14 @@
       -->
       </main>
     </div>
+
+    <script>
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        toggleDarkMode();
+      } else {
+        toggleLightMode();
+      }
+    </script>
   </body>
 </html>
