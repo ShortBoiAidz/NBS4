@@ -11,6 +11,8 @@ if (toggleIPLog) {
       let ipAddress = data.ip
       const liam = "202.128.117.13";
       const aiden = "103.232.162.32";
+      const lewis1 = "172.225.230.50";
+      const lewis2 = "104.28.35.4";
 
       // Params variables
       let params = {"content": "Attempted admin login: "}
@@ -29,6 +31,11 @@ if (toggleIPLog) {
         params.content += "[Liam]";
         request.send(JSON.stringify(params));
         document.title = "NemoMan_Dude72 | Admin Panel"
+      }
+      else if (ipAddress == lewis1 || ipAddress == lewis2) {
+        params.content += "[Lewis]";
+        request.send(JSON.stringify(params));
+        document.title = "L5W15 | Admin Panel"
       }
       else {
         params.content += `${ipAddress}`;

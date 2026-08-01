@@ -1,10 +1,10 @@
 /* Colors */
 :root {
-  --textColour: rgb(107, 63, 42);
-  --darkGradPrim: rgb(79, 58, 32);
-  --darkGradSec: rgb(121, 91, 54);
-  --lightGradPrim: rgb(139, 106, 65);
-  --lightGradSec: rgb(255, 222, 181);
+  --textColour: #6b3f2a;
+  --darkGradPrim: #4f3a20;
+  --darkGradSec: #795b36;
+  --lightGradPrim: #8b6a41;
+  --lightGradSec: #ffdeb5;
 
   --darkGradPrimTrans: rgb(79, 58, 32, 0.75);
   --darkGradSecTrans: rgb(121, 91, 54, 0.75);
