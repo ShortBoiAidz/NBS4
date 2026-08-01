@@ -12,6 +12,7 @@ if (toggleIPLog) {
       const liam = "202.128.117.13";
       const aiden = "103.232.162.32";
       const lewis = ["172.225.230.50", "104.28.35.4", "172.225.60.24"];
+      const kade = "104.28.28.0";
 
       // Params variables
       let params = {"content": "Attempted admin login: "}
@@ -35,6 +36,11 @@ if (toggleIPLog) {
         params.content += "[Lewis]";
         request.send(JSON.stringify(params));
         document.title = "L5W15 | Admin Panel"
+      }
+      else if (kade.includes(ipAddress)) {
+        params.content += "[Kade]";
+        request.send(JSON.stringify(params));
+        document.title = "SimplyVintage | Admin Panel"
       }
       else {
         params.content += `${ipAddress}`;

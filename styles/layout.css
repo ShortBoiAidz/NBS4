@@ -69,6 +69,7 @@ textarea::placeholder {
   align-items: center;
   width: clamp(20vw, 45vw, 45vw);
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .mainCardH2 {
