@@ -10,7 +10,7 @@ if (toggleIPLog) {
       // IP variables
       let ipAddress = data.ip
       const liam = "202.128.117.13";
-      const aiden = "103.232.162.32";
+      const aiden = ["103.232.162.32", "103.232.162.33"];
       const lewis = ["172.225.230.50", "104.28.35.4", "172.225.60.24"];
       const kade = "104.28.28.0";
 
