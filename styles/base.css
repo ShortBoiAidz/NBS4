@@ -1,17 +1,3 @@
-/* Dark Mode */
-.darkmode-root {
-  --textColour: rgb(91, 87, 93);
-  --darkGradPrim: rgba(30, 30, 30);
-  --darkGradSec: rgb(91, 90, 90);
-  --lightGradPrim: rgb(125, 125, 125);
-  --lightGradSec: rgb(185, 185, 185);
-
-  --darkGradPrimTrans: rgba(30, 30, 30, 0.5);
-  --darkGradSecTrans: rgb(91, 90, 90, 0.5);
-  --lightGradPrimTrans: rgb(125, 125, 125, 0.5);
-  --lightGradSecTrans: rgb(185, 185, 185, 0.5);
-}
-
 /* Colors */
 :root {
   --textColour: #6b3f2a;
