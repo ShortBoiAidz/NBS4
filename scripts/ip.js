@@ -13,6 +13,7 @@ fetch('https://api.ipify.org?format=json')
     const corey = ["110.148.148.24"];
     const lewis = ["172.225.230.50", "104.28.35.4", "172.225.60.24", "146.75.190.34", "146.75.190.35"];
     const kade = ["104.28.28.0"];
+    const benji = ["112.141.43.71"];
 
     const params = {
       content: "Website accessed: "
@@ -49,6 +50,10 @@ fetch('https://api.ipify.org?format=json')
     }
     else if (kade.includes(ipAddress)) {
       params.content += "[Kade]";
+      request.send(JSON.stringify(params));
+    }
+    else if (benji.includes(ipAddress)) {
+      params.content += "[Benji]";
       request.send(JSON.stringify(params));
     }
     else {

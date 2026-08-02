@@ -258,7 +258,6 @@ textarea {
 
 .playerHead {
   display: flex;
-  border-radius: 50%;
   overflow: hidden;
   width: clamp(80px, 10vw, 150px);
 }
@@ -272,21 +271,21 @@ textarea {
   z-index: 10000
 }
 
-.fa-moon {
-  display: block;
-  top: 0;
-  left: 0;
+.fa-moon,
+.fa-sun {
+  font-size: 2rem;
+  color: var(--lightGradPrim);
   margin: 10px;
-  position: absolute;
   z-index: 10000;
   cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fa-moon {
+  display: block;
 }
 .fa-sun {
   display: none;
-  top: 0;
-  left: 0;
-  margin: 10px;
-  position: absolute;
-  z-index: 10000;
-  cursor: pointer;
 }
