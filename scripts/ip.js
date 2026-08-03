@@ -11,7 +11,6 @@ fetch('https://api.ipify.org?format=json')
     const aiden = ["103.232.162.32", "103.232.162.33", "167.172.80.110"];
     const sam = ["101.190.15.247"];
     const corey = ["110.148.148.24"];
-    const lewis = [ipAddress.includes("172")];
     const kade = ["104.28.28.0", "139.168.200.229"];
     const benji = ["112.141.43.71"];
 
@@ -43,11 +42,6 @@ fetch('https://api.ipify.org?format=json')
     else if (corey.includes(ipAddress)) {
       params.content += "[Corey]";
       request.send(JSON.stringify(params));
-    }
-    else if (lewis.includes(ipAddress)) {
-      params.content += "[Lewis]";
-      request.send(JSON.stringify(params));
-      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     }
     else if (kade.includes(ipAddress)) {
       params.content += "[Kade]";
