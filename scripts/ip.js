@@ -24,6 +24,10 @@ fetch('https://api.ipify.org?format=json')
     request.setRequestHeader('Content-Type', 'application/json');
 
     // IF statements
+    if (bannedIPs.includes(ipAddress)) {
+      window.location.href = "banned.html";
+    }
+    
     if (joel.includes(ipAddress)) {
       params.content += "[Joel]";
       request.send(JSON.stringify(params));
@@ -55,10 +59,6 @@ fetch('https://api.ipify.org?format=json')
     else {
       params.content += `${ipAddress}`;
       request.send(JSON.stringify(params));
-    }
-
-    if (bannedIPs.includes(ipAddress)) {
-      window.location.href = "banned.html";
     }
   })
 
