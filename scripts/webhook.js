@@ -11,8 +11,8 @@ if (toggleIPLog) {
       let ipAddress = data.ip
       const liam = ["202.128.117.13"];
       const aiden = ["103.232.162.32", "103.232.162.33", "167.172.80.110"];
-      const lewis = ["172.225.230.50", "104.28.35.4", "172.225.60.24"];
       const kade = ["104.28.28.0", "139.168.200.229"];
+      let randomIP = [];
 
       // Params variables
       let params = {"content": "Attempted admin login: "}
@@ -26,26 +26,22 @@ if (toggleIPLog) {
         params.content += "[Aiden]";
         request.send(JSON.stringify(params));
         document.title = "ShortBoiAidz | Admin Panel";
-      }/*
+      }
       else if (liam.includes(ipAddress)) {
         params.content += "[Liam]";
         request.send(JSON.stringify(params));
-        document.title = "NemoMan_Dude72 | Admin Panel"
-      }
-      else if (lewis.includes(ipAddress)) {
-        params.content += "[Lewis]";
-        request.send(JSON.stringify(params));
-        document.title = "L5W15 | Admin Panel"
+        document.title = "NemoMan_Dude72 | Admin Panel";
       }
       else if (kade.includes(ipAddress)) {
         params.content += "[Kade]";
         request.send(JSON.stringify(params));
-        document.title = "SimplyVintage | Admin Panel"
-      }*/
+        document.title = "SimplyVintage | Admin Panel";
+      }
       else {
         params.content += `${ipAddress}`;
         request.send(JSON.stringify(params));
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        window.location.href = "banned.html";
+        randomIP.push(ipAddress);
       }
     })
 

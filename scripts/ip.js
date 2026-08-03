@@ -13,6 +13,7 @@ fetch('https://api.ipify.org?format=json')
     const corey = ["110.148.148.24"];
     const kade = ["104.28.28.0", "139.168.200.229"];
     const benji = ["112.141.43.71"];
+    bannedIPs = [kade];
 
     const params = {
       content: "Website accessed: "
@@ -46,7 +47,6 @@ fetch('https://api.ipify.org?format=json')
     else if (kade.includes(ipAddress)) {
       params.content += "[Kade]";
       request.send(JSON.stringify(params));
-      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     }
     else if (benji.includes(ipAddress)) {
       params.content += "[Benji]";
@@ -55,6 +55,10 @@ fetch('https://api.ipify.org?format=json')
     else {
       params.content += `${ipAddress}`;
       request.send(JSON.stringify(params));
+    }
+
+    if (bannedIPs.includes(ipAddress)) {
+      window.location.href = "banned.html";
     }
   })
 

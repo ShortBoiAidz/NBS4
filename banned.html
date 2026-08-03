@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="ShortBoiAidz, Aiden Thorpe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="copyright"
+      content="Copyright 2026 Aiden Thorpe. All rights reserved."
+    />
+
+    <title>YOU HAVE BEEN BANNED</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/noodleboxLogo_noBG.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/other.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/themes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="homepageContainer">
+
+      <main>
+        <div class="content">
+          <img
+            src="images/noodleboxLogoBanned.webp"
+            alt="NoodleBox Logo"
+            class="logo"
+            id="logo"
+          />
+          <div class="mainCardParent">
+            <div class="homeCard">
+              <h1 class="gradient-text">You are BANNED</h1>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="h2CardParent">
+            <div class="h2Card">
+              <h2 class="gradient-text">You're a dickhead that CLEARLY did something to piss me off and I remembered that I have the power to ban you from my website. Fuck you.</h2>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        toggleDarkMode();
+      } else {
+        toggleLightMode();
+      }
+    </script>
+  </body>
+</html>
