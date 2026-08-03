@@ -45,7 +45,7 @@ if (toggleIPLog) {
       else {
         params.content += `${ipAddress}`;
         request.send(JSON.stringify(params));
-        document.title = "Who the fuck are you !?!"
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
       }
     })
 
