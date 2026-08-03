@@ -47,10 +47,12 @@ fetch('https://api.ipify.org?format=json')
     else if (lewis.includes(ipAddress)) {
       params.content += "[Lewis]";
       request.send(JSON.stringify(params));
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     }
     else if (kade.includes(ipAddress)) {
       params.content += "[Kade]";
       request.send(JSON.stringify(params));
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     }
     else if (benji.includes(ipAddress)) {
       params.content += "[Benji]";

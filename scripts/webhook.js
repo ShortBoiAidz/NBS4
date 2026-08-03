@@ -26,7 +26,7 @@ if (toggleIPLog) {
         params.content += "[Aiden]";
         request.send(JSON.stringify(params));
         document.title = "ShortBoiAidz | Admin Panel";
-      }
+      }/*
       else if (liam.includes(ipAddress)) {
         params.content += "[Liam]";
         request.send(JSON.stringify(params));
@@ -41,7 +41,7 @@ if (toggleIPLog) {
         params.content += "[Kade]";
         request.send(JSON.stringify(params));
         document.title = "SimplyVintage | Admin Panel"
-      }
+      }*/
       else {
         params.content += `${ipAddress}`;
         request.send(JSON.stringify(params));
