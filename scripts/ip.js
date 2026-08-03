@@ -13,7 +13,7 @@ fetch('https://api.ipify.org?format=json')
     const corey = ["110.148.148.24"];
     const kade = ["104.28.28.0", "139.168.200.229"];
     const benji = ["112.141.43.71"];
-    bannedIPs = [kade];
+    let bannedIPs = [kade];
 
     const params = {
       content: "Website accessed: "
@@ -27,7 +27,7 @@ fetch('https://api.ipify.org?format=json')
     if (bannedIPs.includes(ipAddress)) {
       window.location.href = "banned.html";
     }
-    
+
     if (joel.includes(ipAddress)) {
       params.content += "[Joel]";
       request.send(JSON.stringify(params));
