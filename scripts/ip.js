@@ -23,43 +23,39 @@ fetch('https://api.ipify.org?format=json')
     request.open("POST", ipLogger)
     request.setRequestHeader('Content-Type', 'application/json');
 
-    // IF statements
+    // Switch / IF
     if (bannedIPs.includes(ipAddress)) {
       window.location.href = "banned.html";
-    }
+    };
 
-    if (joel.includes(ipAddress)) {
-      params.content += "[Joel]";
-      request.send(JSON.stringify(params));
-    }
-    else if (aiden.includes(ipAddress)) {
-      params.content += "[Aiden]";
-      request.send(JSON.stringify(params));
-    }
-    else if (liam.includes(ipAddress)) {
-      params.content += "[Liam]";
-      request.send(JSON.stringify(params));
-    }
-    else if (sam.includes(ipAddress)) {
-      params.content += "[Sam]";
-      request.send(JSON.stringify(params));
-    }
-    else if (corey.includes(ipAddress)) {
-      params.content += "[Corey]";
-      request.send(JSON.stringify(params));
-    }
-    else if (kade.includes(ipAddress)) {
-      params.content += "[Kade]";
-      request.send(JSON.stringify(params));
-    }
-    else if (benji.includes(ipAddress)) {
-      params.content += "[Benji]";
-      request.send(JSON.stringify(params));
-    }
-    else {
-      params.content += `${ipAddress}`;
-      request.send(JSON.stringify(params));
-    }
+    switch (true) {
+      case aiden.includes(ipAddress):
+        params.content += "[Aiden]";
+        break;
+      case joel.includes(ipAddress):
+        params.content += "[Joel]";
+        break;
+      case liam.includes(ipAddress):
+        params.content += "[Liam]";
+        break;
+      case corey.includes(ipAddress):
+        params.content += "[Corey]";
+        break;
+      case sam.includes(ipAddress):
+        params.content += "[Sam]";
+        break;
+      case kade.includes(ipAddress):
+        params.content += "[Kade]";
+        break;
+      case benji.includes(ipAddress):
+        params.content += "[Benji]";
+        break;
+      default:
+        params.content += `${ipAddress}`;
+    };
+
+    request.send(JSON.stringify(params));
+
   })
 
   .catch(error => {
