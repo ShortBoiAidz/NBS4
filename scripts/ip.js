@@ -13,6 +13,7 @@ fetch('https://api.ipify.org?format=json')
     const corey = ["110.148.148.24"];
     const kade = ["104.28.28.0", "139.168.200.229"];
     const benji = ["112.141.43.71"];
+    const superSchool = ["70.64.237.34"];
     let bannedIPs = [kade];
 
     const params = {
@@ -49,6 +50,9 @@ fetch('https://api.ipify.org?format=json')
         break;
       case benji.includes(ipAddress):
         params.content += "[Benji]";
+        break;
+      case superSchool.includes(ipAddress):
+        params.content += "[Super School]";
         break;
       default:
         params.content += `${ipAddress}`;
