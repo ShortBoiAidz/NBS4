@@ -37,22 +37,14 @@ if (toggleIPLog) {
           document.title = "SimplyVintage | Admin Panel";
           break;
         default:
+          params.content += `${ipAddress}`;
           randomIP.push(ipAddress);
+          window.location.href = "banned.html";
       }
 
       request.send(JSON.stringify(params));
-
-      if (randomIP.includes(ipAddress)) {
-        params.content += `${ipAddress}`;
-        request.send(JSON.stringify(params));
-        window.location.href = "banned.html";
-      }
-    })
-
-    .catch((error) => {
-      console.error("Error fetching IP address:", error);
     });
-}
+};
 
 function message() {
   const dropdown = document.getElementById("webhooks");

@@ -5,6 +5,7 @@ function toggleDarkMode() {
   const sunIcon = document.getElementById("themeToggleSun");
   const headerIcon = document.getElementsByClassName("headerIcon");
   const logo = document.getElementById("logo");
+  let setStyle = elementRoot.style.setProperty;
 
   moonIcon.style.setProperty("display", "none");
   sunIcon.style.setProperty("display", "block");
@@ -16,12 +17,12 @@ function toggleDarkMode() {
     headerIcon[i].style.setProperty("color", "#c9c9c9");
   }
 
-  elementRoot.style.setProperty("--darkGradPrimTrans", "rgba(30, 30, 30, 0.5)");
-  elementRoot.style.setProperty("--darkGradSecTrans", "rgb(91, 90, 90, 0.5)");
-  elementRoot.style.setProperty("--lightGradPrimTrans", "rgb(125, 125, 125, 0.5)");
-  elementRoot.style.setProperty("--lightGradSecTrans", "rgb(185, 185, 185, 0.5)");
+  setStyle("--darkGradPrimTrans", "rgba(30, 30, 30, 0.5)");
+  setStyle("--darkGradSecTrans", "rgb(91, 90, 90, 0.5)");
+  setStyle("--lightGradPrimTrans", "rgb(125, 125, 125, 0.5)");
+  setStyle("--lightGradSecTrans", "rgb(185, 185, 185, 0.5)");
 
-  elementRoot.style.setProperty("--darkGradPrim", "rgba(30, 30, 30)");
+  setStyle("--darkGradPrim", "rgba(30, 30, 30)");
   elementRoot.style.setProperty("--darkGradSec", "rgb(91, 90, 90)");
   elementRoot.style.setProperty("--lightGradPrim", "rgb(125, 125, 125)");
   elementRoot.style.setProperty("--lightGradSec", "rgb(185, 185, 185)");
