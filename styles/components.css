@@ -127,6 +127,10 @@ select option {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.gallaryCard {
+  border: solid 4px var(--darkGradPrim);
+}
+
 /* Images */
 .fa-bars {
   color: var(--darkGradPrim);
