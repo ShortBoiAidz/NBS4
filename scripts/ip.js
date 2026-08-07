@@ -14,7 +14,6 @@ fetch('https://api.ipify.org?format=json')
     const kade = ["104.28.28.0", "139.168.200.229"];
     const benji = ["112.141.43.71"];
     const superSchool = ["70.64.237.34"];
-    let bannedIPs = [kade, liam];
 
     const params = {
       content: "Website accessed: "
@@ -27,11 +26,8 @@ fetch('https://api.ipify.org?format=json')
     // Switch
 
     switch (true) {
-      case bannedIPs.includes(ipAddress):
-        params.content += `[${ipAddress}]`
-        window.location.href="banned.html"
       case aiden.includes(ipAddress):
-        params.content += "[Aiden]";
+        //params.content += "[Aiden]";
         break;
       case joel.includes(ipAddress):
         params.content += "[Joel]";
@@ -56,7 +52,6 @@ fetch('https://api.ipify.org?format=json')
         break;
       default:
         params.content += `${ipAddress}`;
-        window.location.href="banned.html"
     };
 
     request.send(JSON.stringify(params));

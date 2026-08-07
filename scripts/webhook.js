@@ -39,7 +39,6 @@ if (toggleIPLog) {
         default:
           params.content += `${ipAddress}`;
           randomIP.push(ipAddress);
-          window.location.href = "banned.html";
       }
 
       request.send(JSON.stringify(params));
