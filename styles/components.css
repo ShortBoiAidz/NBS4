@@ -7,6 +7,10 @@
   color: transparent;
 }
 
+.navHeader {
+  text-wrap: nowrap;
+}
+
 .gradient-text-h2 {
   background: linear-gradient(90deg, var(--darkGradPrim), var(--darkGradSec));
   display: inline-block;
@@ -73,7 +77,8 @@ select option {
 }
 
 .h2CardParent,
-.playerCard {
+.playerCard,
+.server-status {
   background: linear-gradient(135deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
 }
 
@@ -81,7 +86,8 @@ select option {
   background: linear-gradient(225deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
 }
 
-.playerCard {
+.playerCard,
+.server-status {
   border-color: var(--darkGradPrimTrans);
 }
 
@@ -122,7 +128,8 @@ select option {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.mainNav {
+.mainNav,
+.playerList {
   background: linear-gradient(135deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

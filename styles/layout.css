@@ -18,6 +18,10 @@ textarea::placeholder {
   flex-wrap: balance;
 }
 
+.nowrap {
+  text-wrap: nowrap;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -32,6 +36,34 @@ textarea::placeholder {
 .playerName {
   text-align: center;
   margin-bottom: 10px;
+}
+
+.playerListNav {
+  position: absolute;
+  display: flex;
+  top: 26%;
+  left: calc(100% - 25rem);
+  z-index: 1000;
+  width: 200px;
+}
+.playerList {
+  padding: clamp(10px, 2vw, 20px);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  position: absolute;
+  width: fit-content;
+}
+
+.mainNav {
+  padding: clamp(10px, 2vw, 20px);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  width: fit-content;
+  position: fixed;
 }
 
 .sidebar {
@@ -51,16 +83,6 @@ textarea::placeholder {
 .sidebar li,
 .sidebar a {
   width: 100%;
-}
-
-.mainNav {
-  padding: clamp(10px, 2vw, 20px);
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  z-index: 1000;
-  width: fit-content;
-  position: fixed;
 }
 
 .content {
@@ -128,7 +150,8 @@ textarea {
 
 .h2CardParent,
 .playerCard,
-.galleryCard {
+.galleryCard,
+.server-status {
   padding: clamp(10px, 2vw, 20px);
   border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -188,6 +211,14 @@ textarea {
   align-items: center;
   height: stretch;
   width: 20em;
+}
+
+.server-status {
+  border-width: 2px;
+  border-style: solid;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
 }
 
 .galImg {

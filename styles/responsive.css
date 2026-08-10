@@ -1,3 +1,9 @@
+@media (max-width: 1150px) {
+  .playerListNav {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
   .mainNav {
     display: none;

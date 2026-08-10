@@ -10,10 +10,7 @@
   --darkGradSecTrans: rgb(121, 91, 54, 0.75);
   --lightGradPrimTrans: rgb(139, 106, 65, 0.75);
   --lightGradSecTrans: rgb(255, 222, 181, 0.75);
-  --leagueSpartan:
-    "League Spartan",
-    "Comic Sans MS",
-    sans-serif;
+  --leagueSpartan: "League Spartan", "Comic Sans MS", sans-serif;
 }
 
 /* Reset */
@@ -63,11 +60,7 @@ button {
   border-style: outset;
   border-color: var(--darkGradPrim);
 
-  background: linear-gradient(
-    90deg,
-    var(--lightGradPrim),
-    var(--lightGradSec)
-  );
+  background: linear-gradient(90deg, var(--lightGradPrim), var(--lightGradSec));
 }
 
 nav {

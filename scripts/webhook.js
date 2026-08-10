@@ -10,9 +10,9 @@ if (toggleIPLog) {
 
       // IP variables
       let ipAddress = data.ip;
-      //const liam = ["202.128.117.13"];
+      const liam = ["202.128.117.13"];
       const aiden = ["103.232.162.32", "103.232.162.33", "167.172.80.110"];
-      //const kade = ["104.28.28.0", "139.168.200.229"];
+      const kade = ["104.28.28.0", "139.168.200.229"];
       let randomIP = [];
 
       // Params variables

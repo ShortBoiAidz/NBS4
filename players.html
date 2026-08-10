@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="keywords" content="Minecraft, NoodleBox, Players, NBS4, NBS4 Players, NoodleBox Players" />
-    <meta name="author" content="ShortBoiAidz, Aiden Thorpe" />
     <meta
-      name="description"
-      content="Players of NoodleBox"
+      name="keywords"
+      content="Minecraft, NoodleBox, Players, NBS4, NBS4 Players, NoodleBox Players"
     />
+    <meta name="author" content="ShortBoiAidz, Aiden Thorpe" />
+    <meta name="description" content="Players of NoodleBox" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="copyright"
@@ -17,7 +17,11 @@
     <title>NoodleBox SMP | Our Players</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/images/noodleboxLogo_noBG.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/noodleboxLogo_noBG.png"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,51 +62,129 @@
     <script src="scripts/loader.js"></script>
     <script src="scripts/themes.js"></script>
     <script src="scripts/ipban.js"></script>
+    <script src="scripts/trackPlayers.js"></script>
   </head>
 
   <body>
-      <!-- Loading Screen -->
-      <div class="loading-screen">
-        <div class="loading">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+    </div>
 
     <nav>
       <ul class="sidebar">
-        <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
-        <li><a href="index.html" class="navLink"><h4>Home</h4></a></li>
-        <li><a href="players.html" class="navLink"><h4 class="active">Players</h4></a></li>
-        <li><a onclick=notAvailable() class="navLink"><h4>Societies</h4></a></li>
-        <li><a onclick=notAvailable() class="navLink"><h4>Gallery</h4></a></li>
-        <li><a onclick=notAvailable() class="navLink"><h4>Roadmap</h4></a></li>
-        <li><a href="https://discord.gg/k8M3CMXGmx" class="navLink"><h4>Join Here</h4></a></li>
-        <li><a onclick=notAvailable() class="navLink" download><h4>Modrinth File</h4></a></li>
+        <i class="fa-regular fa-rectangle-xmark" onclick="closeSidebar()"></i>
+        <li>
+          <a href="index.html" class="navLink"><h4>Home</h4></a>
+        </li>
+        <li>
+          <a href="players.html" class="navLink"
+            ><h4 class="active">Players</h4></a
+          >
+        </li>
+        <li>
+          <a onclick="notAvailable()" class="navLink"><h4>Societies</h4></a>
+        </li>
+        <li>
+          <a onclick="notAvailable()" class="navLink"><h4>Gallery</h4></a>
+        </li>
+        <li>
+          <a onclick="notAvailable()" class="navLink"><h4>Roadmap</h4></a>
+        </li>
+        <li>
+          <a href="https://discord.gg/k8M3CMXGmx" class="navLink"
+            ><h4>Join Here</h4></a
+          >
+        </li>
+        <li>
+          <a onclick="notAvailable()" class="navLink" download
+            ><h4>Modrinth File</h4></a
+          >
+        </li>
       </ul>
 
       <ul class="mainNav">
         <h3 class="navHeader gradient-text">Navigation</h3>
         <div class="navDivider"></div>
-        <li><a href="index.html" class="gradient-text navLink availableButton"><h4>Home</h4></a></li>
-        <li><a href="players.html" class="gradient-text navLink active"><h4>Players</h4></a></li>
-        <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton"><h4>Societies</h4></a></li>
-        <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton"><h4>Gallery</h4></a></li>
-        <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton"><h4>Roadmap</h4></a></li>
-        <li><a href="https://discord.gg/k8M3CMXGmx" class="gradient-text navLink availableButton"><h4>Join Here</h4></a></li>
-        <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton" download><h4>Modrinth File</h4></a></li>
+        <li>
+          <a href="index.html" class="gradient-text navLink availableButton"
+            ><h4>Home</h4></a
+          >
+        </li>
+        <li>
+          <a href="players.html" class="gradient-text navLink active"
+            ><h4>Players</h4></a
+          >
+        </li>
+        <li>
+          <a
+            onclick="notAvailable()"
+            class="gradient-text navLink notAvailableButton"
+            ><h4>Societies</h4></a
+          >
+        </li>
+        <li>
+          <a
+            onclick="notAvailable()"
+            class="gradient-text navLink notAvailableButton"
+            ><h4>Gallery</h4></a
+          >
+        </li>
+        <li>
+          <a
+            onclick="notAvailable()"
+            class="gradient-text navLink notAvailableButton"
+            ><h4>Roadmap</h4></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://discord.gg/k8M3CMXGmx"
+            class="gradient-text navLink availableButton"
+            ><h4>Join Here</h4></a
+          >
+        </li>
+        <li>
+          <a
+            onclick="notAvailable()"
+            class="gradient-text navLink notAvailableButton"
+            download
+            ><h4>Modrinth File</h4></a
+          >
+        </li>
       </ul>
     </nav>
-    <i class="fa-solid fa-bars" onclick=openSidebar()></i>
+    <i class="fa-solid fa-bars" onclick="openSidebar()"></i>
 
-    <i class="fa-regular fa-moon" onclick="toggleDarkMode()" id="themeToggleMoon" title="Toggle Dark Mode"></i>
-    <i class="fa-regular fa-sun" onclick="toggleLightMode()" id="themeToggleSun" title="Toggle Light Mode"></i>
+    <i
+      class="fa-regular fa-moon"
+      onclick="toggleDarkMode()"
+      id="themeToggleMoon"
+      title="Toggle Dark Mode"
+    ></i>
+    <i
+      class="fa-regular fa-sun"
+      onclick="toggleLightMode()"
+      id="themeToggleSun"
+      title="Toggle Light Mode"
+    ></i>
 
     <main>
       <div class="content">
-        <div class="playerCard hiddenText"><h1 class="gradient-text">Meet the Players</h1></div>
+        <div class="server-status">
+          <h3 class="gradient-text">
+            Players Online: <span class="nowrap" id="player-count">Loading...</span>
+          </h3>
+        </div>
+
+        <div class="playerCard hiddenText">
+          <h1 class="gradient-text">Meet the Players</h1>
+        </div>
         <section class="mainPlayersSection">
           <div class="playerCardParent">
             <div class="playerCard">
@@ -139,11 +221,7 @@
             </div>
 
             <div class="playerCard">
-              <img
-                src="/images/L2Wl5.png"
-                alt="L2Wl5"
-                class="playerHead"
-              />
+              <img src="/images/L2Wl5.png" alt="L2Wl5" class="playerHead" />
               <h2 class="gradient-text playerName">L2Wl5</h2>
               <div class="playerInfoCard">
                 <h3>He/They</h3>
@@ -286,9 +364,17 @@
       </div>
     </main>
 
+    <nav class="playerListNav">
+      <ul class="playerList">
+        <h3 class="navHeader gradient-text">Online Players</h3>
+        <div class="navDivider"></div>
+        <h4 class="gradient-text"><span id="playersOnline">None online</span></h4>
+      </ul>
+   </nav>
+
     <script>
-      const theme = localStorage.getItem('theme');
-      if (theme === 'dark') {
+      const theme = localStorage.getItem("theme");
+      if (theme === "dark") {
         toggleDarkMode();
       } else {
         toggleLightMode();
