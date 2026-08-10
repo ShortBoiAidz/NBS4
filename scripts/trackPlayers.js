@@ -18,11 +18,9 @@ async function trackOnlinePlayers(serverIP) {
 
         const playerList = data.players.list || [];
         if (playerList.length > 0) {
-            playerSpan.innerHTML = playerList
-                .map(player => `${player.name_raw}`)
-                .join('<br>');
+            playerSpan.innerHTML = playerList.map(player => `${player.name_raw}`).join('<br>');
         } else {
-            playerSpan.textContent = "No players online.";
+            playerSpan.textContent = "No players online";
             console.log("No player names returned (either empty or disabled by server).");
         }
     } catch (error) {
