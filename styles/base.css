@@ -65,8 +65,10 @@ button {
 
 nav {
   position: absolute;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
   right: 10px;
-  top: 26%;
   left: 1%;
   width: 200px;
   z-index: 1000;

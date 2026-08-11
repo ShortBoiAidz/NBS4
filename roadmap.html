@@ -4,23 +4,24 @@
     <meta charset="UTF-8" />
     <meta
       name="keywords"
-      content="Minecraft, NoodleBox, Gallery, NBS4, NBS4 Gallery, NoodleBox Gallery"
+      content="Minecraft, NoodleBox, Roadmap, NBS4, NBS4 Roadmap, NoodleBox Roadmap"
     />
     <meta name="author" content="ShortBoiAidz, Aiden Thorpe" />
-    <meta
-      name="description"
-      content="Images submitted by players to be featured in the gallery."
-    />
+    <meta name="description" content="Players of NoodleBox" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="copyright"
       content="Copyright 2026 Aiden Thorpe, SunnySomething. All rights reserved."
     />
 
-    <title>NoodleBox SMP | Gallery</title>
+    <title>NoodleBox SMP | Roadmap</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/images/noodleboxLogo_noBG.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/noodleboxLogo_noBG.png"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,24 +50,31 @@
     <link rel="stylesheet" href="styles/animations.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
     <link rel="stylesheet" href="styles/other.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/loader.js"></script>
-    <script src="scripts/ipban.js"></script>
     <script src="scripts/themes.js"></script>
+    <script src="scripts/ipban.js"></script>
+    <script src="scripts/trackDay.js"></script>
   </head>
 
-<body>
-      <!-- Loading Screen -->
-      <div class="loading-screen">
-        <div class="loading">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+    </div>
 
     <nav>
       <ul class="sidebar">
@@ -74,8 +82,8 @@
         <li><a href="index.html" class="navLink"><h4>Home</h4></a></li>
         <li><a href="players.html" class="navLink"><h4>Players</h4></a></li>
         <li><a onclick=notAvailable() class="navLink"><h4>Societies</h4></a></li>
-        <li><a href="gallery.html" class="navLink"><h4 class="active">Gallery</h4></a></li>
-        <li><a href="roadmap.html" class="navLink"><h4>Roadmap</h4></a></li>
+        <li><a href="gallery.html" class="navLink"><h4>Gallery</h4></a></li>
+        <li><a href="roadmap.html" class="navLink"><h4 class="active">Roadmap</h4></a></li>
         <li><a href="https://discord.gg/k8M3CMXGmx" class="navLink"><h4>Join Here</h4></a></li>
         <li><a onclick=notAvailable() class="navLink" download><h4>Modrinth File</h4></a></li>
       </ul>
@@ -86,60 +94,47 @@
         <li><a href="index.html" class="gradient-text navLink availableButton"><h4>Home</h4></a></li>
         <li><a href="players.html" class="gradient-text navLink"><h4>Players</h4></a></li>
         <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton"><h4>Societies</h4></a></li>
-        <li><a href="gallery.html" class="gradient-text navLink active"><h4>Gallery</h4></a></li>
-        <li><a href="roadmap.html" class="gradient-text navLink availableButton"><h4>Roadmap</h4></a></li>
+        <li><a href="gallery.html" class="gradient-text navLink"><h4>Gallery</h4></a></li>
+        <li><a href="roadmap.html" class="gradient-text navLink availableButton active"><h4>Roadmap</h4></a></li>
         <li><a href="https://discord.gg/k8M3CMXGmx" class="gradient-text navLink availableButton"><h4>Join Here</h4></a></li>
         <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton" download><h4>Modrinth File</h4></a></li>
       </ul>
     </nav>
-    <i class="fa-solid fa-bars" onclick=openSidebar()></i>
+    <i class="fa-solid fa-bars" onclick="openSidebar()"></i>
 
-    <i class="fa-regular fa-moon" onclick="toggleDarkMode()" id="themeToggleMoon" title="Toggle Dark Mode"></i>
-    <i class="fa-regular fa-sun" onclick="toggleLightMode()" id="themeToggleSun" title="Toggle Light Mode"></i>
+    <i
+      class="fa-regular fa-moon"
+      onclick="toggleDarkMode()"
+      id="themeToggleMoon"
+      title="Toggle Dark Mode"
+    ></i>
+    <i
+      class="fa-regular fa-sun"
+      onclick="toggleLightMode()"
+      id="themeToggleSun"
+      title="Toggle Light Mode"
+    ></i>
 
     <main>
       <div class="content">
-        <section class="mainGallerySection">
-          <div class="gallaryCardParent">
-            <div class="gallaryCard">
-              <img
-                src="/images/betaSunset.png"
-                alt="NemoMan_Dude72"
-                class="galImg"
-              />
-            </div>
-
-            <div class="gallaryCard">
-              <img
-                src="/images/filler.jpeg"
-                alt="NemoMan_Dude72"
-                class="galImg"
-              />
-            </div>
-
-            <div class="gallaryCard">
-              <img
-                src="/images/filler2.jpeg"
-                alt="NemoMan_Dude72"
-                class="galImg"
-              />
-            </div>
-
-            <div class="gallaryCard">
-              <img
-                src="/images/filler3.jpeg"
-                alt="NemoMan_Dude72"
-                class="galImg"
-              />
-            </div>
+        <div class="server-statusParent">
+          <div class="server-status">
+            <h3 class="gradient-text">
+              Current Day: <span class="nowrap" id="server-day-count">Loading...</span>
+            </h3>
           </div>
-        </section>
+        </div>
+
+        <div class="roadmapParent">
+          <img src="images/roadmap.png" alt="Roadmap" class="roadmapImg">
+        </div>
+
       </div>
     </main>
 
     <script>
-      const theme = localStorage.getItem('theme');
-      if (theme === 'dark') {
+      const theme = localStorage.getItem("theme");
+      if (theme === "dark") {
         toggleDarkMode();
       } else {
         toggleLightMode();

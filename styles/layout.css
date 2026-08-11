@@ -41,7 +41,6 @@ textarea::placeholder {
 .playerListNav {
   position: absolute;
   display: flex;
-  top: 26%;
   left: calc(100% - 25rem);
   z-index: 1000;
   width: 200px;
@@ -54,6 +53,22 @@ textarea::placeholder {
   z-index: 1000;
   position: absolute;
   width: fit-content;
+}
+
+.server-statusParent {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.roadmapParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainNav {

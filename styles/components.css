@@ -155,3 +155,9 @@ select option {
 .headerIcon {
   color: #503b21;
 }
+
+.roadmapImg {
+  border-radius: 25px;
+  clip-path: inset(25px round 25px);
+  width: clamp(500px, 4vw, 30rem)
+}
