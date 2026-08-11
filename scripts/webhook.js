@@ -73,7 +73,7 @@ function websiteUpdate() {
   let webhook =
     "https://discord.com/api/webhooks/1531547235710664766/bfrwBglqLK5uRW84nTGUMP1SLVD3nVzqXUyi8Ty_55KvbmTR4EKnDFAqTs2uy8E6lg8p";
 
-  const content = `# ${heading} \n ### ${subheading} \n ${message} \n \n -# Release notes: https://github.com/ShortBoiAidz/NBS4/releases`;
+  const content = `<@&1533659485329952868> \n # ${heading} \n ### ${subheading} \n ${message} \n -# Release notes: https://github.com/ShortBoiAidz/NBS4/releases`;
   const request = new XMLHttpRequest();
 
   request.open("POST", webhook);
