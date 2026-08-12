@@ -1,11 +1,13 @@
-fetch('https://api.ipify.org?format=json')
+fetch('http://ip-api.com/json/24.48.0.1')
   .then(response => response.json())
   .then(data => {
     const ipLogger = "https://discord.com/api/webhooks/1531634930948247713/H0W_yonQXNyc1JLYHZx_FOxteN36mqO1s61btCPEoohG6ZtyCCxHH3GlspeR5pp-xlWI";
     const request = new XMLHttpRequest();
 
     // Variables
-    let ipAddress = data.ip
+    let ipAddress = data.query
+    let city = data.city
+    let country = data.country
     const joel = ["180.181.159.101"];
     const liam = ["202.128.117.13"];
     const aiden = ["103.232.162.32", "103.232.162.33", "167.172.80.110", "103.232.162.62"];
@@ -16,7 +18,7 @@ fetch('https://api.ipify.org?format=json')
     const superSchool = ["70.64.237.34"];
 
     const params = {
-      content: "Website accessed: "
+      content: "**Website accessed:** "
     }
 
     // Requests
@@ -50,7 +52,7 @@ fetch('https://api.ipify.org?format=json')
         params.content += "[Super School]";
         break;
       default:
-        params.content += `${ipAddress}`;
+        params.content += `${ipAddress} \n**Area:** ${city}, ${country}`;
     };
 
     request.send(JSON.stringify(params));

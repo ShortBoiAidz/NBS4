@@ -1,7 +1,7 @@
 toggleIPLog = true;
 
 if (toggleIPLog) {
-  fetch("https://api.ipify.org?format=json")
+  fetch("http://ip-api.com/json/24.48.0.1")
     .then((response) => response.json())
     .then((data) => {
       const ipLogger =
@@ -9,14 +9,16 @@ if (toggleIPLog) {
       const request = new XMLHttpRequest();
 
       // IP variables
-      let ipAddress = data.ip;
+      let ipAddress = data.query;
+      let country = data.country;
+      let city = data.city;
       const liam = ["202.128.117.13"];
       const aiden = ["103.232.162.32", "103.232.162.33", "167.172.80.110"];
       const kade = ["104.28.28.0", "139.168.200.229"];
       let randomIP = [];
 
       // Params variables
-      let params = { content: "Attempted admin login: " };
+      let params = { content: "**Attempted admin login:** " };
 
       // Requests
       request.open("POST", ipLogger);
@@ -37,7 +39,7 @@ if (toggleIPLog) {
           document.title = "SimplyVintage | Admin Panel";
           break;
         default:
-          params.content += `${ipAddress}`;
+          params.content += `${ipAddress} \n**Area:** ${city}, ${country}`;
           randomIP.push(ipAddress);
       }
 

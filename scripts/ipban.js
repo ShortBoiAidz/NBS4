@@ -1,7 +1,7 @@
-fetch('https://api.ipify.org?format=json')
+fetch('http://ip-api.com/json/24.48.0.1')
   .then(response => response.json())
   .then(data => {
-    let ipAddress = data.ip
+    let ipAddress = data.query
     const joel = ["180.181.159.101"];
     const liam = ["202.128.117.13"];
     const aiden = ["103.232.162.32", "103.232.162.33", "167.172.80.110"];
