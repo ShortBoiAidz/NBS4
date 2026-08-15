@@ -7,6 +7,14 @@
   color: transparent;
 }
 
+.capitalise {
+  text-transform: capitalize;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
 .navHeader {
   text-wrap: nowrap;
 }
@@ -78,7 +86,8 @@ select option {
 
 .h2CardParent,
 .playerCard,
-.server-status {
+.server-status,
+.weatherForm {
   background: linear-gradient(135deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
 }
 
@@ -103,7 +112,8 @@ select option {
   background: linear-gradient(135deg, var(--lightGradPrim), var(--lightGradSec));
 }
 
-.homeCard {
+.homeCard,
+.weatherCard {
   backdrop-filter: blur(2px);
   background: linear-gradient(135deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
 }
@@ -160,4 +170,8 @@ select option {
   border-radius: 25px;
   clip-path: inset(25px round 25px);
   width: clamp(500px, 4vw, 30rem)
+}
+
+.weatherEmoji {
+  font-size: 5em;
 }

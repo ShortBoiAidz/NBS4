@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="keywords"
-      content="Minecraft, NoodleBox, Roadmap, NBS4, NBS4 Roadmap, NoodleBox Roadmap"
+      content="Minecraft, NoodleBox, Players, NBS4, NBS4 Players, NoodleBox Players"
     />
     <meta name="author" content="ShortBoiAidz, Aiden Thorpe" />
     <meta name="description" content="Players of NoodleBox" />
@@ -14,7 +14,7 @@
       content="Copyright 2026 Aiden Thorpe, SunnySomething. All rights reserved."
     />
 
-    <title>NoodleBox SMP | Roadmap</title>
+    <title>NoodleBox SMP | Our Players</title>
 
     <!-- Favicon -->
     <link
@@ -62,7 +62,7 @@
     <script src="scripts/loader.js"></script>
     <script src="scripts/themes.js"></script>
     <script src="scripts/ipban.js"></script>
-    <!--<script src="scripts/trackDay.js"></script>-->
+    <script src="scripts/weather.js" defer></script>
   </head>
 
   <body>
@@ -78,26 +78,26 @@
 
     <nav>
       <ul class="sidebar">
-        <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
+        <i class="fa-regular fa-rectangle-xmark" onclick="closeSidebar()"></i>
         <li><a href="index.html" class="navLink"><h4>Home</h4></a></li>
         <li><a href="players.html" class="navLink"><h4>Players</h4></a></li>
-        <li><a href="extra.html" class="navLink"><h4>Extra</h4></a></li>
+        <li><a href="extra.html" class="navLink"><h4 class="active">Extra</h4></a></li>
         <li><a href="gallery.html" class="navLink"><h4>Gallery</h4></a></li>
-        <li><a href="roadmap.html" class="navLink"><h4 class="active">Roadmap</h4></a></li>
+        <li><a href="roadmap.html" class="navLink"><h4>Roadmap</h4></a></li>
         <li><a href="https://discord.gg/k8M3CMXGmx" class="navLink"><h4>Join Here</h4></a></li>
         <li><a onclick=notAvailable() class="navLink" download><h4>Modrinth File</h4></a></li>
       </ul>
 
       <ul class="mainNav">
         <h3 class="navHeader gradient-text">Navigation</h3>
-        <div class="navDivider"></div>
-        <li><a href="index.html" class="gradient-text navLink availableButton"><h4>Home</h4></a></li>
-        <li><a href="players.html" class="gradient-text navLink"><h4>Players</h4></a></li>
-        <li><a href="extra.html" class="gradient-text navLink availableButton"><h4>Extra</h4></a></li>
-        <li><a href="gallery.html" class="gradient-text navLink"><h4>Gallery</h4></a></li>
-        <li><a href="roadmap.html" class="gradient-text navLink availableButton active"><h4>Roadmap</h4></a></li>
-        <li><a href="https://discord.gg/k8M3CMXGmx" class="gradient-text navLink availableButton"><h4>Join Here</h4></a></li>
-        <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton" download><h4>Modrinth File</h4></a></li>
+          <div class="navDivider"></div>
+          <li><a href="index.html" class="gradient-text navLink availableButton"><h4>Home</h4></a></li>
+          <li><a href="players.html" class="gradient-text navLink availableButton"><h4>Players</h4></a></li>
+          <li><a href="extra.html" class="gradient-text navLink availableButton active"><h4>Extra</h4></a></li>
+          <li><a href="gallery.html" class="gradient-text navLink availableButton"><h4>Gallery</h4></a></li>
+          <li><a href="roadmap.html" class="gradient-text navLink availableButton"><h4>Roadmap</h4></a></li>
+          <li><a href="https://discord.gg/k8M3CMXGmx" class="gradient-text navLink availableButton"><h4>Join Here</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton" download><h4>Modrinth File</h4></a></li>
       </ul>
     </nav>
     <i class="fa-solid fa-bars" onclick="openSidebar()"></i>
@@ -117,23 +117,20 @@
 
     <main>
       <div class="content">
-        <div class="server-statusParent">
-          <div class="server-status">
-            <h3 class="gradient-text">
-              Current Day: <span class="nowrap" id="server-day-count">Offline</span>
-            </h3>
+        <section class="mainPlayersSection">
+          <div class="weatherCardParent">
+              <form class="weatherForm">
+                <h2 class="gradient-text">Weather</h2>
+                <input type="text" class="weatherInput" placeholder="Enter City">
+                <button type="submit"><p style="font-size: 2rem;" class="gradient-text-h2">Submit</p></button>
+              </form>
+
+              <br>
+
+              <div class="weatherCard" style="display: none;"></div>
+            </div>
           </div>
-        </div>
-      <!--
-        <div class="roadmapParent">
-          <img src="images/roadmap.png" alt="Roadmap" class="roadmapImg">
-        </div>
-      -->
-        <div class="h2CardParent" style="width: fit-content;">
-          <div class="mainCard">
-            <h2 class="gradient-text" style="font-size: 3rem; padding: 1rem;">Not out yet</h2>
-          </div>
-        </div>
+        </section>
       </div>
     </main>
 

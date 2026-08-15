@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="keywords"
-      content="Minecraft, Server, Homepage, NoodleBox, Season 4, NBS4, SMP"
+      content="Minecraft, Server, Extra, NoodleBox, Season 4, NBS4, SMP"
     />
     <meta name="author" content="ShortBoiAidz, Aiden Thorpe" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,10 +14,10 @@
     />
     <meta
       name="description"
-      content="Find information about the NoodleBox SMP!"
+      content="Extra fun stuff unrelated to NBS4"
     />
 
-    <title>NoodleBox SMP | Homepage</title>
+    <title>NoodleBox SMP | Extra</title>
 
     <link rel="icon" type="image/x-icon" href="/images/noodleboxLogo_noBG.png" />
 
@@ -49,12 +49,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/loader.js"></script>
-    <script src="scripts/ip.js"></script>
     <script src="scripts/themes.js"></script>
     <script src="scripts/ipban.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <link rel="canonical" href="https://noodlebox.cc" />
   </head>
 
   <body>
@@ -72,9 +69,9 @@
       <nav>
         <ul class="sidebar">
           <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
-          <li><a href="index.html" class="navLink"><h4 class="active">Home</h4></a></li>
+          <li><a href="index.html" class="navLink"><h4>Home</h4></a></li>
           <li><a href="players.html" class="navLink"><h4>Players</h4></a></li>
-          <li><a href="extra.html" class="navLink"><h4>Extra</h4></a></li>
+          <li><a href="extra.html" class="navLink"><h4 class="active">Extra</h4></a></li>
           <li><a href="gallery.html" class="navLink"><h4>Gallery</h4></a></li>
           <li><a href="roadmap.html" class="navLink"><h4>Roadmap</h4></a></li>
           <li><a href="https://discord.gg/k8M3CMXGmx" class="navLink"><h4>Join Here</h4></a></li>
@@ -84,9 +81,9 @@
         <ul class="mainNav">
           <h3 class="navHeader gradient-text">Navigation</h3>
           <div class="navDivider"></div>
-          <li><a href="index.html" class="gradient-text navLink active availableButton"><h4>Home</h4></a></li>
+          <li><a href="index.html" class="gradient-text navLink availableButton"><h4>Home</h4></a></li>
           <li><a href="players.html" class="gradient-text navLink availableButton"><h4>Players</h4></a></li>
-          <li><a href="extra.html" class="gradient-text navLink availableButton"><h4>Extra</h4></a></li>
+          <li><a href="extra.html" class="gradient-text navLink availableButton active"><h4>Extra</h4></a></li>
           <li><a href="gallery.html" class="gradient-text navLink availableButton"><h4>Gallery</h4></a></li>
           <li><a href="roadmap.html" class="gradient-text navLink availableButton"><h4>Roadmap</h4></a></li>
           <li><a href="https://discord.gg/k8M3CMXGmx" class="gradient-text navLink availableButton"><h4>Join Here</h4></a></li>
@@ -100,64 +97,29 @@
 
       <main>
         <div class="content">
-          <img
-            src="images/noodleboxLogo.png"
-            alt="NoodleBox Logo"
-            class="logo"
-            id="logo"
-            onclick="location.href='https://nsb3-archive.surzies.workers.dev/'"
-            title="Take me back to the old times"
-          />
-          <div class="mainCardParent">
-            <div class="homeCard">
-              <h1 class="gradient-text">NoodleBox Season 4</h1>
-
-              <br />
-
-              <sub class="gradient-text">Temporary Shutdown</sub>
-
-              <br />
-
-              <h4 class="gradient-text">Current Update: Undefined</h4>
-
-              <br />
-
-              <div class="buttonCardParent">
-                <a href="https://discord.gg/k8M3CMXGmx">
-                  <div class="buttonCard availableButton">
-                    <i class="fa-brands fa-discord headerIcon" style="cursor: pointer"></i>
-                  </div>
-                </a>
-
-                <div class="buttonCard availableButton">
-                  <i class="fa-solid fa-envelope headerIcon" onclick="emailClick()" style="cursor: pointer"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <br />
 
           <div class="h2CardParent">
             <div class="h2Card">
-              <button onclick="location.href = 'players.html'" class="availableButton">
-                <h2 class="gradient-text-h2">Players</h2>
-                <p class="gradient-text-h2">Meet the players who populate NoodleBox</p>
+              <button onclick="location.href = 'weather.html'" class="availableButton">
+                <h2 class="gradient-text-h2">Weather</h2>
+                <p class="gradient-text-h2">See your current weather by search</p>
               </button>
 
-              <button onclick="location.href = 'extra.html'" class="availableButton">
-                <h2 class="gradient-text-h2">Extra</h2>
-                <p class="gradient-text-h2">Unrelated fun stuff to check out!</p>
+              <button onclick="location.href = 'https://docs.google.com/document/d/1i3OmfbrUqoK_V7MU1eifW4u-FaSZfhYQPkN5LF5Caqs/edit?usp=sharing'" class="availableButton">
+                <h2 class="gradient-text-h2">Docs</h2>
+                <p class="gradient-text-h2">Sign your name and mark your place in the document</p>
               </button>
             </div>
 
             <div class="mainCardH2">
-              <button onclick="location.href = 'gallery.html'" class="availableButton">
-                <h2 class="gradient-text-h2">Gallery</h2>
+              <button onclick="alert('Not available')" class="notAvailableButton">
+                <h2 class="gradient-text-h2">[Enter shit]</h2>
+                <p class="gradient-text-h2">[Enter shit]</p>
               </button>
 
-              <button onclick="location.href = 'roadmap.html'" class="availableButton">
-                <h2 class="gradient-text-h2">Roadmap</h2>
+              <button onclick="alert('Not available')" class="notAvailableButton">
+                <h2 class="gradient-text-h2">[Enter shit]</h2>
+                <p class="gradient-text-h2">[Enter shit]</p>
               </button>
             </div>
           </div>

