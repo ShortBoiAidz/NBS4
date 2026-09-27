@@ -18,13 +18,20 @@
     />
 
     <meta property="og:title" content="NoodleBox SMP | Homepage" />
-    <meta property="og:description" content="Official website for the NoodleBox SMP" />
+    <meta
+      property="og:description"
+      content="Official website for the NoodleBox SMP"
+    />
     <meta property="og:image" content="/images/noodleboxLogo_noBG.png" />
     <meta property="og:url" content="https://noodlebox.cc" />
 
     <title>NoodleBox SMP | Homepage</title>
 
-    <link rel="icon" type="image/x-icon" href="/images/noodleboxLogo_noBG.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/noodleboxLogo_noBG.png"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -76,32 +83,97 @@
     <div class="homepageContainer">
       <nav>
         <ul class="sidebar">
-          <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
-          <li><a href="index.html" class="navLink"><h4 class="active">Home</h4></a></li>
-          <li><a href="players.html" class="navLink"><h4>Players</h4></a></li>
-          <li><a href="extra.html" class="navLink"><h4>Extra</h4></a></li>
-          <li><a href="gallery.html" class="navLink"><h4>Gallery</h4></a></li>
-          <li><a href="roadmap.html" class="navLink"><h4>Roadmap</h4></a></li>
-          <li><a href="https://discord.gg/k8M3CMXGmx" class="navLink"><h4>Join Here</h4></a></li>
-          <li><a onclick=notAvailable() class="navLink" download><h4>Modrinth File</h4></a></li>
+          <i class="fa-regular fa-rectangle-xmark" onclick="closeSidebar()"></i>
+          <li>
+            <a href="index.html" class="navLink"
+              ><h4 class="active">Home</h4></a
+            >
+          </li>
+          <li>
+            <a href="players.html" class="navLink"><h4>Players</h4></a>
+          </li>
+          <li>
+            <a href="extra.html" class="navLink"><h4>Extra</h4></a>
+          </li>
+          <li>
+            <a href="gallery.html" class="navLink"><h4>Gallery</h4></a>
+          </li>
+          <li>
+            <a href="roadmap.html" class="navLink"><h4>Roadmap</h4></a>
+          </li>
+          <li>
+            <a href="https://discord.gg/k8M3CMXGmx" class="navLink"
+              ><h4>Join Here</h4></a
+            >
+          </li>
+          <li>
+            <a href="fiveNightsAtNoodlefrights.mrpack" class="navLink" download
+              ><h4>Modrinth File</h4></a
+            >
+          </li>
         </ul>
 
         <ul class="mainNav">
           <h3 class="navHeader gradient-text">Navigation</h3>
           <div class="navDivider"></div>
-          <li><a href="index.html" class="gradient-text navLink active availableButton"><h4>Home</h4></a></li>
-          <li><a href="players.html" class="gradient-text navLink availableButton"><h4>Players</h4></a></li>
-          <li><a href="extra.html" class="gradient-text navLink availableButton"><h4>Extra</h4></a></li>
-          <li><a href="gallery.html" class="gradient-text navLink availableButton"><h4>Gallery</h4></a></li>
-          <li><a href="roadmap.html" class="gradient-text navLink availableButton"><h4>Roadmap</h4></a></li>
-          <li><a href="https://discord.gg/k8M3CMXGmx" class="gradient-text navLink availableButton"><h4>Join Here</h4></a></li>
-          <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton" download><h4>Modrinth File</h4></a></li>
+          <li>
+            <a
+              href="index.html"
+              class="gradient-text navLink active availableButton"
+              ><h4>Home</h4></a
+            >
+          </li>
+          <li>
+            <a href="players.html" class="gradient-text navLink availableButton"
+              ><h4>Players</h4></a
+            >
+          </li>
+          <li>
+            <a href="extra.html" class="gradient-text navLink availableButton"
+              ><h4>Extra</h4></a
+            >
+          </li>
+          <li>
+            <a href="gallery.html" class="gradient-text navLink availableButton"
+              ><h4>Gallery</h4></a
+            >
+          </li>
+          <li>
+            <a href="roadmap.html" class="gradient-text navLink availableButton"
+              ><h4>Roadmap</h4></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://discord.gg/k8M3CMXGmx"
+              class="gradient-text navLink availableButton"
+              ><h4>Join Here</h4></a
+            >
+          </li>
+          <li>
+            <a
+              href="fiveNightsAtNoodlefrights.mrpack"
+              class="gradient-text navLink availableButton"
+              download
+              ><h4>Modrinth File</h4></a
+            >
+          </li>
         </ul>
       </nav>
-      <i class="fa-solid fa-bars" onclick=openSidebar()></i>
+      <i class="fa-solid fa-bars" onclick="openSidebar()"></i>
 
-      <i class="fa-regular fa-moon" onclick="toggleDarkMode()" id="themeToggleMoon" title="Toggle Dark Mode"></i>
-      <i class="fa-regular fa-sun" onclick="toggleLightMode()" id="themeToggleSun" title="Toggle Light Mode"></i>
+      <i
+        class="fa-regular fa-moon"
+        onclick="toggleDarkMode()"
+        id="themeToggleMoon"
+        title="Toggle Dark Mode"
+      ></i>
+      <i
+        class="fa-regular fa-sun"
+        onclick="toggleLightMode()"
+        id="themeToggleSun"
+        title="Toggle Light Mode"
+      ></i>
 
       <main>
         <div class="content">
@@ -110,32 +182,43 @@
             alt="NoodleBox Logo"
             class="logo"
             id="logo"
-            onclick="location.href='https://nsb3-archive.surzies.workers.dev/'"
+            onclick="
+              location.href = 'https://nsb3-archive.surzies.workers.dev/'
+            "
             title="Take me back to the old times"
           />
           <div class="mainCardParent">
             <div class="homeCard">
-              <h1 class="gradient-text">NoodleBox Season 4</h1>
+              <h1 class="gradient-text">Five Nights at Noodle Frights</h1>
 
               <br />
 
-              <sub class="gradient-text">Temporary Shutdown</sub>
+              <sub class="gradient-text">Mini-Season</sub>
 
               <br />
 
-              <h4 class="gradient-text">Current Update: Undefined</h4>
+              <h4 class="gradient-text">
+                Current Update: "FNANF"
+              </h4>
 
               <br />
 
               <div class="buttonCardParent">
                 <a href="https://discord.gg/k8M3CMXGmx">
                   <div class="buttonCard availableButton">
-                    <i class="fa-brands fa-discord headerIcon" style="cursor: pointer"></i>
+                    <i
+                      class="fa-brands fa-discord headerIcon"
+                      style="cursor: pointer"
+                    ></i>
                   </div>
                 </a>
 
                 <div class="buttonCard availableButton">
-                  <i class="fa-solid fa-envelope headerIcon" onclick="emailClick()" style="cursor: pointer"></i>
+                  <i
+                    class="fa-solid fa-envelope headerIcon"
+                    onclick="emailClick()"
+                    style="cursor: pointer"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -145,23 +228,39 @@
 
           <div class="h2CardParent">
             <div class="h2Card">
-              <button onclick="location.href = 'players.html'" class="availableButton">
+              <button
+                onclick="location.href = 'players.html'"
+                class="availableButton"
+              >
                 <h2 class="gradient-text-h2">Players</h2>
-                <p class="gradient-text-h2">Meet the players who populate NoodleBox</p>
+                <p class="gradient-text-h2">
+                  Meet the players who populate NoodleBox
+                </p>
               </button>
 
-              <button onclick="location.href = 'extra.html'" class="availableButton">
+              <button
+                onclick="location.href = 'extra.html'"
+                class="availableButton"
+              >
                 <h2 class="gradient-text-h2">Extra</h2>
-                <p class="gradient-text-h2">Unrelated fun stuff to check out!</p>
+                <p class="gradient-text-h2">
+                  Unrelated fun stuff to check out!
+                </p>
               </button>
             </div>
 
             <div class="mainCardH2">
-              <button onclick="location.href = 'gallery.html'" class="availableButton">
+              <button
+                onclick="location.href = 'gallery.html'"
+                class="availableButton"
+              >
                 <h2 class="gradient-text-h2">Gallery</h2>
               </button>
 
-              <button onclick="location.href = 'roadmap.html'" class="availableButton">
+              <button
+                onclick="location.href = 'roadmap.html'"
+                class="availableButton"
+              >
                 <h2 class="gradient-text-h2">Roadmap</h2>
               </button>
             </div>
@@ -171,8 +270,8 @@
     </div>
 
     <script>
-      const theme = localStorage.getItem('theme');
-      if (theme === 'dark') {
+      const theme = localStorage.getItem("theme");
+      if (theme === "dark") {
         toggleDarkMode();
       } else {
         toggleLightMode();

@@ -15,7 +15,10 @@
     />
 
     <meta property="og:title" content="NoodleBox SMP | Our Players" />
-    <meta property="og:description" content="Meet the players of NoodleBox SMP" />
+    <meta
+      property="og:description"
+      content="Meet the players of NoodleBox SMP"
+    />
     <meta property="og:image" content="/images/noodleboxLogo_noBG.png" />
     <meta property="og:url" content="https://noodlebox.cc/players.html" />
 
@@ -84,25 +87,80 @@
     <nav>
       <ul class="sidebar">
         <i class="fa-regular fa-rectangle-xmark" onclick="closeSidebar()"></i>
-        <li><a href="index.html" class="navLink"><h4>Home</h4></a></li>
-        <li><a href="players.html" class="navLink"><h4 class="active">Players</h4></a></li>
-        <li><a href="extra.html" class="navLink"><h4>Extra</h4></a></li>
-        <li><a href="gallery.html" class="navLink"><h4>Gallery</h4></a></li>
-        <li><a href="roadmap.html" class="navLink"><h4>Roadmap</h4></a></li>
-        <li><a href="https://discord.gg/k8M3CMXGmx" class="navLink"><h4>Join Here</h4></a></li>
-        <li><a onclick=notAvailable() class="navLink" download><h4>Modrinth File</h4></a></li>
+        <li>
+          <a href="index.html" class="navLink"><h4>Home</h4></a>
+        </li>
+        <li>
+          <a href="players.html" class="navLink"
+            ><h4 class="active">Players</h4></a
+          >
+        </li>
+        <li>
+          <a href="extra.html" class="navLink"><h4>Extra</h4></a>
+        </li>
+        <li>
+          <a href="gallery.html" class="navLink"><h4>Gallery</h4></a>
+        </li>
+        <li>
+          <a href="roadmap.html" class="navLink"><h4>Roadmap</h4></a>
+        </li>
+        <li>
+          <a href="https://discord.gg/k8M3CMXGmx" class="navLink"
+            ><h4>Join Here</h4></a
+          >
+        </li>
+        <li>
+          <a onclick="fiveNightsAtNoodlefrights.mrpack" class="navLink" download
+            ><h4>Modrinth File</h4></a
+          >
+        </li>
       </ul>
 
       <ul class="mainNav">
         <h3 class="navHeader gradient-text">Navigation</h3>
-          <div class="navDivider"></div>
-          <li><a href="index.html" class="gradient-text navLink availableButton"><h4>Home</h4></a></li>
-          <li><a href="players.html" class="gradient-text navLink active availableButton"><h4>Players</h4></a></li>
-          <li><a href="extra.html" class="gradient-text navLink availableButton"><h4>Extra</h4></a></li>
-          <li><a href="gallery.html" class="gradient-text navLink availableButton"><h4>Gallery</h4></a></li>
-          <li><a href="roadmap.html" class="gradient-text navLink availableButton"><h4>Roadmap</h4></a></li>
-          <li><a href="https://discord.gg/k8M3CMXGmx" class="gradient-text navLink availableButton"><h4>Join Here</h4></a></li>
-          <li><a onclick=notAvailable() class="gradient-text navLink notAvailableButton" download><h4>Modrinth File</h4></a></li>
+        <div class="navDivider"></div>
+        <li>
+          <a href="index.html" class="gradient-text navLink availableButton"
+            ><h4>Home</h4></a
+          >
+        </li>
+        <li>
+          <a
+            href="players.html"
+            class="gradient-text navLink active availableButton"
+            ><h4>Players</h4></a
+          >
+        </li>
+        <li>
+          <a href="extra.html" class="gradient-text navLink availableButton"
+            ><h4>Extra</h4></a
+          >
+        </li>
+        <li>
+          <a href="gallery.html" class="gradient-text navLink availableButton"
+            ><h4>Gallery</h4></a
+          >
+        </li>
+        <li>
+          <a href="roadmap.html" class="gradient-text navLink availableButton"
+            ><h4>Roadmap</h4></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://discord.gg/k8M3CMXGmx"
+            class="gradient-text navLink availableButton"
+            ><h4>Join Here</h4></a
+          >
+        </li>
+        <li>
+          <a
+            href="fiveNightsAtNoodlefrights.mrpack"
+            class="gradient-text navLink availableButton"
+            download
+            ><h4>Modrinth File</h4></a
+          >
+        </li>
       </ul>
     </nav>
     <i class="fa-solid fa-bars" onclick="openSidebar()"></i>
@@ -124,7 +182,8 @@
       <div class="content">
         <div class="server-status">
           <h3 class="gradient-text">
-            Players Online: <span class="nowrap" id="player-count">Loading...</span>
+            Players Online:
+            <span class="nowrap" id="player-count">Loading...</span>
           </h3>
         </div>
 
@@ -314,9 +373,11 @@
       <ul class="playerList">
         <h3 class="navHeader gradient-text">Online Players</h3>
         <div class="navDivider"></div>
-        <h4 class="gradient-text"><span id="playersOnline">None online</span></h4>
+        <h4 class="gradient-text">
+          <span id="playersOnline">None online</span>
+        </h4>
       </ul>
-   </nav>
+    </nav>
 
     <script>
       const theme = localStorage.getItem("theme");

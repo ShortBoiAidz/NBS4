@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const startDate = new Date('2026-08-05T00:00:00');
+  const startDate = new Date('2026-09-24T00:00:00');
   const currentDate = new Date();
   const differenceInMs = currentDate - startDate;
   const msPerDay = 1000 * 60 * 60 * 24;
