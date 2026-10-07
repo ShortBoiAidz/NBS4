@@ -34,10 +34,14 @@ function toggleDarkMode() {
   elementRoot.style.setProperty("--darkGradSec", "rgb(91, 90, 90)");
   elementRoot.style.setProperty("--lightGradPrim", "rgb(125, 125, 125)");
   elementRoot.style.setProperty("--lightGradSec", "rgb(185, 185, 185)");
+  elementRoot.style.setProperty("--textColour", "rgb(185, 185, 185)");
 
   localStorage.setItem("theme", "dark");
 
   logo.src = "images/noodleboxLogoDark.png";
+
+  const title = document.getElementById("title");
+  title.textContent = "Five Nights at Noodle Frights!";
 }
 
 function toggleLightMode() {
@@ -72,8 +76,12 @@ function toggleLightMode() {
   elementRoot.style.setProperty("--darkGradSec", "#795b36");
   elementRoot.style.setProperty("--lightGradPrim", "#8b6a41");
   elementRoot.style.setProperty("--lightGradSec", "#ffdeb5");
+  elementRoot.style.setProperty("--textColour", "#ffdeb5");
 
   localStorage.setItem("theme", "light");
 
   logo.src = "images/noodleboxLogo.png";
+
+  const title = document.getElementById("title");
+  title.textContent = "NoodleBox Season 4";
 }

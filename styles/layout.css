@@ -404,6 +404,9 @@ textarea,
   top: 0;
   left: 0;
 }
+.fa-moon {
+  color: var(--lightGradSec);
+}
 
 .fa-moon {
   display: block;
@@ -414,4 +417,18 @@ textarea,
 
 #shortboiaidz {
   scale: 1.6;
+}
+
+header {
+  background: var(--darkGradSec);
+  color: var(--textColour);
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--leagueSpartan);
+  border-radius: 0px 0px 10px 10px;
+  text-wrap: balance;
+}
+
+.title {
+  text-wrap: balance;
 }
